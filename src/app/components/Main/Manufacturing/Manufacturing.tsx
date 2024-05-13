@@ -6,40 +6,43 @@ import { useMediaQuery } from 'react-responsive';
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const ManufacturingSection: FC = () => {
+    const t = useTranslations('translations.main.manufacturing');
     const isDesktop = useMediaQuery({ minWidth: 1200 });
     const isTablet = useMediaQuery({ minWidth: 757, maxWidth: 1199 });
-    const isMobile = useMediaQuery({ maxWidth: 756 });
+    const isMobile = useMediaQuery({ maxWidth: 756, minWidth: 451 });
+    const isSmallMobile = useMediaQuery({ maxWidth: 450 });
 
     const steps = [
         {
             url: '/manufacturing/1-step.webp',
-            description: 'Виготовлення керамічної маси (шлікера);',
+            description: t('1-step'),
         },
         {
             url: '/manufacturing/2-step.webp',
-            description: 'Заливка шлікеру у форми;',
+            description: t('2-step'),
         },
         {
             url: '/manufacturing/3-step.webp',
-            description: 'Утильний випал при 800℃ в електропечі;',
+            description: t('3-step'),
         },
         {
             url: '/manufacturing/4-step.webp',
-            description: 'Глазурування виробу;',
+            description: t('4-step'),
         },
         {
             url: '/manufacturing/5-step.webp',
-            description: 'Політий випал при 1330℃ у газовій печі;',
+            description: t('5-step'),
         },
         {
             url: '/manufacturing/6-step.webp',
-            description: 'Фарбування виробу надглазурними фарбами;',
+            description: t('6-step'),
         },
         {
             url: '/manufacturing/7-step.webp',
-            description: 'Випал при температурі 800С в електропечі.',
+            description: t('7-step'),
         },
     ];
 
@@ -64,7 +67,7 @@ const ManufacturingSection: FC = () => {
                     { cx: -90, cy: 660, tx: 200, ty: -20 },
                     { cx: 135, cy: 670, tx: 215, ty: 50 },
                 ]
-                : [
+                : isMobile ? [
                     { cx: -60, cy: 125, tx: -15, ty: 90 },
                     { cx: 115, cy: 160, tx: -25, ty: 80 },
                     { cx: 115, cy: 280, tx: -60, ty: 15 },
@@ -72,6 +75,14 @@ const ManufacturingSection: FC = () => {
                     { cx: -135, cy: 385, tx: 120, ty: 20 },
                     { cx: -90, cy: 475, tx: 115, ty: -10 },
                     { cx: 65, cy: 485, tx: 125, ty: 30 },
+                ] : [
+                    { cx: -50, cy: 85, tx: -15, ty: 70 },
+                    { cx: 115, cy: 120, tx: -25, ty: 80 },
+                    { cx: 115, cy: 240, tx: -60, ty: 15 },
+                    { cx: -65, cy: 275, tx: -30, ty: -15 },
+                    { cx: -135, cy: 345, tx: 120, ty: 20 },
+                    { cx: -90, cy: 425, tx: 95, ty: -10 },
+                    { cx: 65, cy: 445, tx: 35, ty: 70 },
                 ];
 
         return steps.map((image, index) => (
@@ -110,7 +121,7 @@ const ManufacturingSection: FC = () => {
     return (
         <section className={styles.manufacturing_section}>
             <h2 className={styles.manufacturing_section_title}>
-                ЕТАПИ ВИГОТОВЛЕННЯ УРН
+                {t('title')}
             </h2>
             <div className={styles.manufacturing_section_steps_wrapper}>
                 <div className={styles.manufacturing_section_circles_wrapper}>
@@ -165,6 +176,22 @@ const ManufacturingSection: FC = () => {
                         </React.Fragment>
                     )}
                     {isMobile && (
+                        <React.Fragment>
+                            <path
+                                d="M142.664 1.02123H253.541C287.356 0.200847 354.987 22.8639 354.987 120.079C355.559 156.484 336.07 229.293 253.541 229.293H102.086"
+                                stroke="#7F5539"
+                                strokeWidth="1.8"
+                                strokeLinecap="round"
+                            />
+                            <path
+                                d="M102.459 229.293C68.6433 228.471 1.01255 251.177 1.01255 348.578C0.441019 385.052 19.9301 458 102.459 458H223.896"
+                                stroke="#7F5539"
+                                strokeWidth="1.8"
+                                strokeLinecap="round"
+                            />
+                        </React.Fragment>
+                    )}
+                    {isSmallMobile && (
                         <React.Fragment>
                             <path
                                 d="M142.664 1.02123H253.541C287.356 0.200847 354.987 22.8639 354.987 120.079C355.559 156.484 336.07 229.293 253.541 229.293H102.086"

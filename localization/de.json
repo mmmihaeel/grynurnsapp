@@ -1,6 +1,54 @@
 {
     "locale": "de",
     "translations": {
-        "title": "Kopfball!"
+        "header": {
+            "about": "Über uns",
+            "gallery": "Galerie",
+            "contacts": "Kontakte"
+        },
+        "main": {
+            "h1-title": "Ein Mann, der mit seinen Händen arbeitet, ist ein Arbeiter; \n ein Mann, der mit seinen Händen und seinem Kopf arbeitet, ist ein Handwerker;\n aber ein Mann, der mit seinen Händen, seinem Kopf und seinem Herzen arbeitet, ist ein <important>Meister seines Fachs.</important>",
+            "about-us": {
+                "h2-title": "ÜBER UNS",
+                "p-1": "Wir haben unsere Reise in die Welt der Keramik auf der Grundlage der Porzellanfabrik Horodnytsky begonnen. Seit 1993 haben wir viel Erfahrung in der Herstellung von Keramikprodukten gesammelt. Die Geschichte unseres Unternehmens ist ein Zeugnis. für unser Engagement und Können.",
+                "p-2": "Durch die Arbeit in der Stadt Slowjansk konnten wir uns zu einer großen Fabrik entwickeln, entschieden uns aber später, unsere Produktion an einen sichereren Ort zu verlegen. Jetzt arbeiten wir mit neuem Enthusiasmus und starten die Produktion von Grund auf neu.",
+                "p-3": "Wir produzieren Urnen für Asche, die sowohl für Menschen als auch für Tiere bestimmt sind und einen individuellen Ansatz und handwerkliches Können bis ins Detail verkörpern. Bei uns können Sie mit einer schnellen Produktion rechnen – nur eine Woche, aber wir sind auch bereit. Berücksichtigen Sie Ihre individuellen Wünsche und Aufträge, auch wenn diese etwas länger dauern."
+            },
+            "advantages": {
+                "1": "Unser Team besteht aus echten Profis. Wir haben 15 Mitarbeiter, von denen jeder über umfangreiche Erfahrung in der Herstellung von Keramikprodukten verfügt.",
+                "2": "Unsere Urnen verkörpern handwerkliches Können und einen individuellen Ansatz. Wir bieten eine große Auswahl an Größen und Formen sowie die Möglichkeit, Urnen nach Ihren eigenen Skizzen zu bestellen.",
+                "3": "Wir verstehen, dass Zeit ein wichtiger Faktor ist, deshalb sorgen wir für eine schnelle Produktion von Urnen – nur eine Woche."
+            },
+            "manufacturing": {
+                "title": "STUFEN DER HERSTELLUNG",
+                "1-ste": "Keramikmasse herstellen (glatter);",
+                "2-step": "Den Schlicker in Formen gießen;",
+                "3-step": "Nützliches Brennen bei 800℃ in einem Elektroofen;",
+                "4-step": "Produkt glasieren;",
+                "5-stufig": "Bündiges Brennen bei 1330℃ in einem Gasofen;",
+                "6-step": "Das Produkt mit Überglasurfarben lackieren;",
+                "7-stufig": "Brennen bei einer Temperatur von 800 °C in einem Elektroofen."
+            },
+            "h2-title": "Wählen Sie eine Urne, die Ihre Liebe widerspiegelt"
+        },
+        "gallery": {
+            "h1-title": "UNSERE WERKE",
+            "advantages": {
+                "1": "Wir bieten auch den Service an, individuelle Urnen auf Bestellung anzufertigen. Unsere Handwerker sind bereit, mit Ihnen zusammenzuarbeiten, um eine Gedenkurne zu erstellen.",
+                "2": "Ein individueller Ansatz ermöglicht es Ihnen, Form, Farbe und Dekoration zu wählen. Wir gehen auf Ihre Wünsche ein, um Ihnen bei der Suche nach der besonderen Urne zu helfen, die ein würdiges Denkmal darstellt.",
+                "3": "Wählen Sie eine unserer fertigen Varianten oder lassen Sie Ihrer Fantasie freien Lauf – wir setzen Ihre Vision gerne in ein hochwertiges Keramikprodukt um."
+            },
+            "contact-us": "Kontaktieren Sie uns für Details oder um eine Bestellung aufzugeben."
+        },
+        "footer": {
+            "contacts": "KONTAKTE",
+            "Socials": "Telefon / Viber / WhatsApp",
+            "email": "Email"
+        },
+        "buttons": {
+            "order": "Bestellung aufgeben",
+            "view": "Bins anzeigen",
+            "more": "MEHR anzeigen"
+        }
     }
 }
