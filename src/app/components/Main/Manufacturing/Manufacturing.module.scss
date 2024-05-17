@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import '../../../variables.scss';
 
 .manufacturing_section {
     width: 100%;
@@ -47,6 +47,22 @@
         margin-top: 75px;
         width: 100%;
         position: relative;
+
+        @media(max-width: 450px) {
+            margin-top: 25px;
+        }
+
+        @media (max-width: 390px) {
+            padding: 20px 45px;
+        }
+
+        @media (max-width: 370px) {
+            padding: 20px 35px;
+        }
+
+        @media (max-width: 340px) {
+            padding: 20px 25px;
+        }
 
         &_step {
             position: absolute;
@@ -105,11 +121,14 @@
                 }
 
                 @media (max-width: 450px) {
-
                     font-size: 10px;
                     text-align: right;
                     width: 120px;
                     line-height: 11px;
+                }
+
+                @media (max-width: 400px) {
+                    font-size: 9px;
                 }
             }
 

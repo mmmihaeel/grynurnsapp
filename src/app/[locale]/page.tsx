@@ -1,14 +1,5 @@
-import { useTranslations } from 'next-intl';
-import dynamic from 'next/dynamic'
-const ManufacturingSection = dynamic(() => import('../components/Main/Manufacturing'), { ssr: false })
+import Main from '../components/Main';
 
-const MainPage = () => {
-    const t = useTranslations('translations');
-
-
-    return <>
-        <ManufacturingSection />
-    </>;
-}
+const MainPage = () => <Main />;
 
 export default MainPage;

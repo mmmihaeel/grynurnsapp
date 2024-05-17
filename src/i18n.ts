@@ -1,12 +1,11 @@
-import { notFound } from "next/navigation";
-import { getRequestConfig } from "next-intl/server";
-
-const locales = ["en", "de", "fr", "pl", "uk"];
+import { notFound } from 'next/navigation';
+import { getRequestConfig } from 'next-intl/server';
+import { locales, type Locale } from './i18n.config';
 
 export default getRequestConfig(async ({ locale }) => {
-  if (!locales.includes(locale as any)) notFound();
+	if (!locales.includes(locale as Locale)) notFound();
 
-  return {
-    messages: (await import(`../localization/${locale}.json`)).default,
-  };
+	return {
+		messages: (await import(`../localization/${locale}.json`)).default,
+	};
 });

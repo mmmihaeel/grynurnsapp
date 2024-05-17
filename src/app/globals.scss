@@ -14,48 +14,48 @@
 
 @font-face {
     font-family: 'Mariupol Symbols';
-    src: url('./assets/fonts/MariupolSymbols.eot');
+    src: url('/fonts/MariupolSymbols.eot');
     src: local('Mariupol Symbols'), local('MariupolSymbols'),
-        url('./assets/fonts/MariupolSymbols.eot?#iefix') format('embedded-opentype'),
-        url('./assets/fonts/MariupolSymbols.woff2') format('woff2'),
-        url('./assets/fonts/MariupolSymbols.woff') format('woff'),
-        url('./assets/fonts/MariupolSymbols.ttf') format('truetype');
+        url('/fonts/MariupolSymbols.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/MariupolSymbols.woff2') format('woff2'),
+        url('/fonts/MariupolSymbols.woff') format('woff'),
+        url('/fonts/MariupolSymbols.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Mariupol';
-    src: url('./assets/fonts/Mariupol-Medium.eot');
+    src: url('/fonts/Mariupol-Medium.eot');
     src: local('Mariupol Medium'), local('Mariupol-Medium'),
-        url('./assets/fonts/Mariupol-Medium.eot?#iefix') format('embedded-opentype'),
-        url('./assets/fonts/Mariupol-Medium.woff2') format('woff2'),
-        url('./assets/fonts/Mariupol-Medium.woff') format('woff'),
-        url('./assets/fonts/Mariupol-Medium.ttf') format('truetype');
+        url('/fonts/Mariupol-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Mariupol-Medium.woff2') format('woff2'),
+        url('/fonts/Mariupol-Medium.woff') format('woff'),
+        url('/fonts/Mariupol-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Mariupol';
-    src: url('./assets/fonts/Mariupol-Regular.eot');
+    src: url('/fonts/Mariupol-Regular.eot');
     src: local('Mariupol'), local('Mariupol-Regular'),
-        url('./assets/fonts/Mariupol-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./assets/fonts/Mariupol-Regular.woff2') format('woff2'),
-        url('./assets/fonts/Mariupol-Regular.woff') format('woff'),
-        url('./assets/fonts/Mariupol-Regular.ttf') format('truetype');
+        url('/fonts/Mariupol-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Mariupol-Regular.woff2') format('woff2'),
+        url('/fonts/Mariupol-Regular.woff') format('woff'),
+        url('/fonts/Mariupol-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Mariupol';
-    src: url('./assets/fonts/Mariupol-Bold.eot');
+    src: url('/fonts/Mariupol-Bold.eot');
     src: local('Mariupol Bold'), local('Mariupol-Bold'),
-        url('./assets/fonts/Mariupol-Bold.eot?#iefix') format('embedded-opentype'),
-        url('./assets/fonts/Mariupol-Bold.woff2') format('woff2'),
-        url('./assets/fonts/Mariupol-Bold.woff') format('woff'),
-        url('./assets/fonts/Mariupol-Bold.ttf') format('truetype');
+        url('/fonts/Mariupol-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Mariupol-Bold.woff2') format('woff2'),
+        url('/fonts/Mariupol-Bold.woff') format('woff'),
+        url('/fonts/Mariupol-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }

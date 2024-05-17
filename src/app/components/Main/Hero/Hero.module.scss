@@ -1,0 +1,11 @@
+.hero_section {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background: url('../../../assets/images/backgrounds/main-composition-1.webp') center center/cover no-repeat scroll;
+
+    @media (max-width: 1110px) {
+        background: url('../../../assets/images/backgrounds/main-composition-2.webp') center center/cover no-repeat scroll;
+    }
+}

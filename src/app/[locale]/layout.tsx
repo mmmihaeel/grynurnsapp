@@ -1,8 +1,7 @@
 "use server";
-import "../globals.scss";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
 const Header = dynamic(() => import('../components/Header'), { ssr: true });
 const Footer = dynamic(() => import('../components/Footer'), { ssr: true });
 
@@ -105,6 +104,6 @@ const MainLayout = async ({
             </body>
         </html>
     );
-}
+};
 
 export default MainLayout;

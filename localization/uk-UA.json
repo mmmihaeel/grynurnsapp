@@ -1,5 +1,8 @@
 {
     "locale": "uk",
+    "Manifest": {
+        "name": "next-intl example"
+    },
     "translations": {
         "header": {
             "about": "Про нас",
