@@ -1,0 +1,24 @@
+@import '../../app/variables.scss';
+
+.gallery {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: 100px auto;
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 65px 0;
+
+    &_title {
+        font-weight: 400;
+        font-family: 'Mariupol';
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: 400px;
+        color: $block-color;
+        text-align: center;
+        font-weight: 400;
+    }
+}

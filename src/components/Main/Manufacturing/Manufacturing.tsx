@@ -91,7 +91,7 @@ const ManufacturingSection: FC = () => {
                     top: circlePositions[index].cy,
                     left: circlePositions[index].cx,
                 }}
-                animate={{
+                whileInView={{
                     top: circlePositions[index].cy,
                     left: circlePositions[index].cx,
                 }}
@@ -107,7 +107,7 @@ const ManufacturingSection: FC = () => {
                         top: circlePositions[index].ty,
                         left: circlePositions[index].tx,
                     }}
-                    animate={{
+                    whileInView={{
                         top: circlePositions[index].ty,
                         left: circlePositions[index].tx,
                     }}
@@ -119,10 +119,18 @@ const ManufacturingSection: FC = () => {
     };
 
     return (
-        <section className={styles.manufacturing_section}>
-            <h2 className={styles.manufacturing_section_title}>
+        <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className={styles.manufacturing_section}>
+            <motion.h2
+                initial={{ opacity: 0, translateY: '-80px' }}
+                whileInView={{ opacity: 1, scale: 1, translateY: '0px' }}
+                transition={{ duration: 1 }} className={styles.manufacturing_section_title}>
                 {t('title')}
-            </h2>
+            </motion.h2>
             <div className={styles.manufacturing_section_steps_wrapper}>
                 <div className={styles.manufacturing_section_circles_wrapper}>
                     {renderCircles()}
@@ -209,7 +217,7 @@ const ManufacturingSection: FC = () => {
                     )}
                 </motion.svg>
             </div>
-        </section>
+        </motion.section>
     );
 };
 

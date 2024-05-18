@@ -7,7 +7,7 @@
             "contacts": "Contacts"
         },
         "main": {
-            "h1-title": "A man who works with his hands is a worker; \n a man who works with his hands and head is a craftsman;\n but a man who works with his hands, head, and heart is a <important>master of his craft.</important>",
+            "h1-title": "A man who works with his hands is a worker; <br/> a man who works with his hands and head is a craftsman;<br/> but a man who works with his hands, head, and<br/> heart is a <strong>master of his craft.</strong>",
             "about-us": {
                 "h2-title": "ABOUT US",
                 "p-1": "We started our journey in the world of ceramics on the basis of the Horodnytsky Porcelain Factory. Since 1993, we have gained a lot of experience in the production of ceramic products. The history of our business is a testament to our dedication and skill.",
@@ -29,7 +29,7 @@
                 "6-step": "Painting the product with overglaze paints;",
                 "7-step": "Firing at a temperature of 800C in an electric furnace."
             },
-            "h2-title": "Choose an Urn That Reflects Your Love"
+            "h2-title": "Choose an Urn That Reflects<br/> Your Love"
         },
         "gallery": {
             "h1-title": "OUR WORKS",

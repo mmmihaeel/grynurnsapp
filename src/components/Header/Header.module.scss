@@ -1,7 +1,7 @@
-@import '../../variables.scss';
+@import '../../app/variables.scss';
 
 .header {
-    position: fixed;
+    position: absolute;
     z-index: 10000;
     top: 0;
     width: 100%;
@@ -26,6 +26,27 @@
     &_logo {
         cursor: pointer;
         width: 128px;
-        height: 90px;
+        height: 100px;
+    }
+
+    &_nav {
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: space-around;
+
+        &_link {
+            font-family: 'Mariupol';
+            color: $main-color;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 24px;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $block-color;
+            }
+        }
     }
 }

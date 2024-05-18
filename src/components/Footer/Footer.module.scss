@@ -1,0 +1,82 @@
+@import '../../app/variables.scss';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    padding: 55px 0;
+    background: $block-color center center/cover no-repeat scroll;
+    min-height: 506px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    &_title {
+        font-family: "Mariupol", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color: #F9EEE4;
+        font-size: 65px;
+        line-height: 78px;
+        margin-bottom: 0;
+
+        @media (max-width: 1200px) {
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        @media (max-width: 756px) {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
+    &_contacts {
+        display: flex;
+        width: 60%;
+        margin-top: 70px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &_contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+        justify-content: flex-start;
+    }
+
+    &_label {
+        font-family: "Mariupol", serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        color: #F9EEE4;
+        font-size: 26px;
+        line-height: 25px;
+        margin-bottom: 0;
+    }
+
+    &_link {
+        margin: 35px 0;
+        font-family: "Mariupol", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        text-decoration: underline;
+        color: #F9EEE4;
+        font-size: 26px;
+        line-height: 25px;
+        margin-bottom: 0;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+}

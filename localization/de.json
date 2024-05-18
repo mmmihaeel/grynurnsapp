@@ -7,7 +7,7 @@
             "contacts": "Kontakte"
         },
         "main": {
-            "h1-title": "Ein Mann, der mit seinen Händen arbeitet, ist ein Arbeiter; \n ein Mann, der mit seinen Händen und seinem Kopf arbeitet, ist ein Handwerker;\n aber ein Mann, der mit seinen Händen, seinem Kopf und seinem Herzen arbeitet, ist ein <important>Meister seines Fachs.</important>",
+            "h1-title": "Ein Mann, der mit seinen Händen arbeitet, ist ein Arbeiter; <br/> ein Mann, der mit seinen Händen und seinem Kopf arbeitet, ist ein Handwerker;<br/> aber ein Mann, der mit seinen Händen, seinem Kopf und<br/> seinem Herzen arbeitet, ist ein <strong>Meister seines Fachs.</strong>",
             "about-us": {
                 "h2-title": "ÜBER UNS",
                 "p-1": "Wir haben unsere Reise in die Welt der Keramik auf der Grundlage der Porzellanfabrik Horodnytsky begonnen. Seit 1993 haben wir viel Erfahrung in der Herstellung von Keramikprodukten gesammelt. Die Geschichte unseres Unternehmens ist ein Zeugnis. für unser Engagement und Können.",
@@ -29,7 +29,7 @@
                 "6-step": "Das Produkt mit Überglasurfarben lackieren;",
                 "7-stufig": "Brennen bei einer Temperatur von 800 °C in einem Elektroofen."
             },
-            "h2-title": "Wählen Sie eine Urne, die Ihre Liebe widerspiegelt"
+            "h2-title": "Wählen Sie eine Urne, die Ihre<br/> Liebe widerspiegelt"
         },
         "gallery": {
             "h1-title": "UNSERE WERKE",
@@ -42,7 +42,7 @@
         },
         "footer": {
             "contacts": "KONTAKTE",
-            "Socials": "Telefon / Viber / WhatsApp",
+            "socials": "Telefon / Viber / WhatsApp",
             "email": "Email"
         },
         "buttons": {

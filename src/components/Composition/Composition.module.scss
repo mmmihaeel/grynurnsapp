@@ -1,0 +1,58 @@
+@import '../../app/variables.scss';
+
+.composition {
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+
+    &_product {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 30%;
+        position: relative;
+        gap: 20px;
+        min-height: 100px;
+
+        &_text {
+            order: 1;
+
+            &_title {
+                font-family: 'Anglecia Pro Display';
+                font-style: italic;
+                color: $block-color;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 22px;
+            }
+
+            &_descr {
+                font-family: 'Mariupol';
+                font-style: normal;
+                margin-top: 5px;
+                color: $block-color;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+
+        &_image {
+            order: 0;
+            width: 100%;
+            height: 551px;
+            position: relative;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

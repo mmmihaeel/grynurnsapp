@@ -7,7 +7,7 @@
             "contacts": "Contact"
         },
         "main": {
-            "h1-title": "Człowiek qui travaille avec les mains, jest robotnikiem; \n człowiek, qui travaille avec les mains et la tête, jest rzemieślnikiem;\n ale człowiek, qui travaille avec les mains, la tête et le cœur, jest <important>mistrz w swoim rzemiośle .</important>",
+            "h1-title": "Człowiek qui travaille avec les mains, jest robotnikiem; <br/> człowiek, qui travaille avec les mains et la tête, jest rzemieślnikiem;<br/> ale człowiek, qui travaille avec les mains, la tête et<br/> le cœur, jest <strong>mistrz w swoim rzemiośle .</strong>",
             "about-us": {
                 "h2-title": "O NAS",
                 "p-1": "Naszą podróż w świecie ceramiki rozpoczęliśmy na bazie Horodnickiej Fabryki Porcelany. Od 1993 roku zdobyliśmy duże doświadczenie w produkcji wyrobów ceramicznych. Świadectwem jest historia naszej działalności za nasze poświęcenie i umiejętności.",
@@ -29,7 +29,7 @@
                 "6-step": "Peindre le produit avec des couches de finition ;",
                 "7-step": "Cuisson à 800°C dans un four électrique"
             },
-            "h2-title": "Choisissez une urne qui reflète votre amour"
+            "h2-title": "Choisissez une urne qui reflèt<br/> votre amour"
         },
         "gallery": {
             "h1-title": "NOS OEUVRES",

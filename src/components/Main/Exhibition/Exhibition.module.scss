@@ -1,0 +1,106 @@
+@import '../../../app/variables.scss';
+
+.exhibition_section {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 65px 0;
+
+    &_title {
+        font-weight: 400;
+        font-family: 'Mariupol';
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: 400px;
+        color: $block-color;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    &_products {
+        margin-top: 50px;
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+
+        &_product {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 30%;
+            position: relative;
+            gap: 20px;
+            min-height: 100px;
+
+            &_text {
+                order: 1;
+
+                &_title {
+                    font-family: 'Anglecia Pro Display';
+                    font-style: italic;
+                    color: $block-color;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 22px;
+                }
+
+                &_descr {
+                    font-family: 'Mariupol';
+                    font-style: normal;
+                    margin-top: 5px;
+                    color: $block-color;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+            }
+
+            &_image {
+                order: 0;
+                width: 100%;
+                height: 551px;
+                position: relative;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    &_button_more {
+        margin-top: 35px;
+        background: none;
+        border: 1px solid $block-color;
+        padding: 12px 15px 12px 15px;
+        width: 341px;
+        outline: none;
+        font-size: 23px;
+        line-height: 23px;
+        font-weight: 400;
+        font-family: 'Mariupol';
+        color: $block-color;
+        text-align: center;
+        font-weight: 400;
+        transition: .5 ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+            border: 1px solid $block-color;
+            outline: none;
+            opacity: 0.5;
+        }
+    }
+}

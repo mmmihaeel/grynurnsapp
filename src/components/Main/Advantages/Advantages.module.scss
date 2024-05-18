@@ -1,0 +1,40 @@
+@import '../../../app/variables.scss';
+
+.advantages_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    background: $block-color center center/cover no-repeat scroll;
+    min-height: 406px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    &_advantage {
+        min-width: 357px;
+        max-width: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        &_icon {
+            min-width: 85px;
+            height: 95px;
+        }
+
+        &_text {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 400;
+            font-family: 'Mariupol';
+            color: $main-color;
+            text-align: left;
+            font-weight: 400;
+        }
+    }
+}
