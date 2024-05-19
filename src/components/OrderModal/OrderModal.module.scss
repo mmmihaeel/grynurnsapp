@@ -1,0 +1,227 @@
+@import '../../app/variables.scss';
+
+.orderModal {
+    position: relative;
+    overflow: hidden;
+
+    &_background {
+        cursor: pointer;
+        position: fixed;
+        overflow: hidden;
+        top: 50%;
+        z-index: 1000000;
+        left: 50%;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &_modal {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        background-color: $block-color;
+        min-height: 650px;
+        top: 50%;
+        padding: 40px 80px;
+        z-index: 10000000;
+        left: 50%;
+        width: 750px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 40px;
+
+        &_close {
+            cursor: pointer;
+            position: absolute;
+            top: 25px;
+            right: 5px;
+            transform: translate(-50%, -50%);
+        }
+
+        &_field {
+            min-height: 92px;
+            position: relative;
+            width: 100%;
+
+            @media (max-width: 467px) {
+                margin-top: 10px;
+            }
+
+            &_error {
+                line-height: 20px;
+                margin-top: 8px;
+                font-style: normal;
+                font-family: 'Mariupol';
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                color: $warning-color;
+                line-height: normal;
+
+                @media (max-width: 400px) {
+                    top: 80%;
+                }
+            }
+
+            &_input {
+                width: 100%;
+                position: relative;
+                height: 70%;
+
+                &_error {
+                    position: relative;
+                    border: 1px solid $warning-color;
+                    color: $warning-color;
+
+                    &:after {
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        right: 0;
+                        top: 0;
+                        content: '';
+                    }
+                }
+
+                &_hiddenIcon {
+                    position: absolute;
+                    top: 50%;
+                    right: 25px;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                }
+
+                textarea:hover,
+                textarea:focus,
+                textarea:active {
+                    border: solid 1px $block-color;
+                    background: $main-color;
+                }
+
+                input:hover,
+                input:focus,
+                input:active {
+                    border: solid 1px $block-color;
+                    background: $main-color;
+                }
+
+                textarea,
+                input {
+                    width: 100%;
+                    background: $main-color;
+                    color: $block-color;
+                    font-style: normal;
+                    font-family: 'Mariupol';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    padding: 18px 20px 15px 20px;
+
+                    @media (max-width: 424px) {
+                        height: 90%;
+                    }
+
+                    @media (max-width: 360px) {
+                        height: 85%;
+                    }
+                }
+
+                textarea {
+                    height: 145px;
+                }
+
+                textarea:-webkit-autofill,
+                textarea:-webkit-autofill:hover,
+                textarea:-webkit-autofill:focus,
+                input:-webkit-autofill,
+                input:-webkit-autofill:hover,
+                input:-webkit-autofill:focus {
+                    background: $main-color !important;
+                    color: #CB997E !important;
+                }
+
+                textarea:-moz-placeholder,
+                input:-moz-placeholder {
+                    background: $main-color !important;
+                    color: #CB997E !important;
+                }
+
+                label {
+                    text-align: center;
+                    font-style: normal;
+                    font-family: 'Mariupol';
+                    color: $main-color;
+                    font-weight: 400;
+                    font-size: 19px;
+                    line-height: 20px;
+                }
+
+                textarea::placeholder,
+                input::placeholder {
+                    color: $block-color;
+                    font-family: 'Mariupol';
+                    font-size: 19px;
+                    line-height: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+
+        &_title {
+            margin: 0 auto;
+            max-width: 420px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Anglecia Pro Display', sans-serif;
+            font-style: normal;
+            font-family: 'Mariupol';
+            color: $main-color;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 43px;
+        }
+    }
+
+    &_form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &_sendButton {
+        margin-top: 20px;
+        background: none;
+        border: 1px solid $main-color;
+        padding: 12px 15px 12px 15px;
+        width: 341px;
+        outline: none;
+        font-size: 23px;
+        line-height: 23px;
+        font-weight: 400;
+        font-family: 'Mariupol';
+        color: $main-color;
+        text-align: center;
+        font-weight: 400;
+        transition: .5 ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+            outline: none;
+            color: $block-color;
+            background-color: $main-color;
+            border: none;
+        }
+    }
+}

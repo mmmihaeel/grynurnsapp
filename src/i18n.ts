@@ -6,6 +6,10 @@ export default getRequestConfig(async ({ locale }) => {
 	if (!locales.includes(locale as Locale)) notFound();
 
 	return {
-		messages: (await import(`../localization/${locale}.json`)).default,
+		messages: (locale === 'uk-UA'
+			? await import(`../localization/uk-UA.json`)
+			: await import(`../localization/${locale}.json`)
+		).default,
+		now: new Date(),
 	};
 });

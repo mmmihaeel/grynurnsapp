@@ -19,7 +19,9 @@ export const pathnames = {
 	},
 } satisfies Pathnames<typeof locales>;
 
-export const localePrefix = 'always';
+export const localePrefix = 'as-needed';
+
+export const matcher = `/(${locales.join('|')})/:path*`;
 
 export type AppPathnames = keyof typeof pathnames;
 

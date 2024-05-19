@@ -1,6 +1,22 @@
 {
     "locale": "fr",
     "translations": {
+        "order-modal": {
+            "title": "Écrivez-nous et nous vous contacterons",
+            "name_label": "Entrez votre nom",
+            "phonenumber_label": "Entrez votre numéro de téléphone",
+            "email_label": "Entrez votre adresse e-mail",
+            "message_label": "Écrivez-nous votre message",
+            "name_placeholder": "Jean",
+            "phonenumber_placeholder": "+33 (0) 1 23 45 67 89",
+            "email_placeholder": "your_email@example.com",
+            "message_placeholder": "Message",
+            "invalid_name": "Veuillez entrer votre nom",
+            "invalid_email": "Entrez une adresse e-mail valide",
+            "invalid_phonenumber": "Entrez un numéro de téléphone valide",
+            "message_max": "Le message ne doit pas dépasser 1000 caractères",
+            "send": "Envoyer"
+        },
         "header": {
             "about": "À propos de nous",
             "gallery": "Galerie",

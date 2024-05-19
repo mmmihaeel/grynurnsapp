@@ -12,6 +12,7 @@ const Footer = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            id='contacts'
             transition={{ duration: 0.2 }}
             className={styles.footer}
         >

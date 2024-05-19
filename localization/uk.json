@@ -1,6 +1,22 @@
 {
     "locale": "uk",
     "translations": {
+        "order-modal": {
+            "title": "напишіть нам і ми Зв’яжемось з вами",
+            "name_label": "Вкажіть Ваше Ім’я",
+            "phonenumber_label": "Вкажіть Ваш номер телефону",
+            "email_label": "Вкажіть Ваш Email",
+            "message_label": "Напишіть нам Ваше повідомлення",
+            "name_placeholder": "Іван",
+            "phonenumber_placeholder": "+38(0",
+            "email_placeholder": "abcdefg@gmail.com",
+            "message_placeholder": "Повідомлення",
+            "invalid_name": "Будь ласка, введіть своє ім'я",
+            "invalid_email": "Введіть дійсну електронну адресу",
+            "invalid_phonenumber": "Введіть дійсний номер телефону",
+            "message_max": "Повідомлення не може перевищувати 1000 символів",
+            "send": "Надіслати"
+        },
         "header": {
             "about": "Про нас",
             "gallery": "Галерея",

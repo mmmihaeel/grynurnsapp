@@ -1,6 +1,22 @@
 {
     "locale": "en",
     "translations": {
+        "order-modal": {
+            "title": "Write to us and we'll get in touch",
+            "name_label": "Enter your name",
+            "phonenumber_label": "Enter your phone number",
+            "email_label": "Enter your email address",
+            "message_label": "Write your message to us",
+            "name_placeholder": "John",
+            "phonenumber_placeholder": "+1 (555) 555-5555",
+            "email_placeholder": "your_email@example.com",
+            "message_placeholder": "Message",
+            "invalid_name": "Please enter your name",
+            "invalid_email": "Enter a valid email address",
+            "invalid_phonenumber": "Enter a valid phone number",
+            "message_max": "Message cannot exceed 1000 characters",
+            "send": "Send"
+        },
         "header": {
             "about": "About us",
             "gallery": "Gallery",

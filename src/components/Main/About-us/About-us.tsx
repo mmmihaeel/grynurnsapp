@@ -24,7 +24,7 @@ const AboutUsSection: FC = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            id="about-us-section"
+            id="about-us"
             className={styles.about_us_section}
         >
             <div className={styles.about_us_section_wrapper}>

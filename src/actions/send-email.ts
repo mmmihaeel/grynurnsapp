@@ -1,16 +1,10 @@
 'use server';
-import { messageSchema } from '@/utils/validation';
+import { MessageDto } from '@/types/message.type';
+import { MessageSchema } from '@/utils/validation';
 import nodemailer from 'nodemailer';
 
-export type MessageDto = {
-	name: string;
-	email: string;
-	phoneNumber: string;
-	message: string;
-};
-
 const sendEmail = async (messageDto: MessageDto) => {
-	const validatedMessageDto = await messageSchema.parseAsync(messageDto);
+	const validatedMessageDto = await MessageSchema.safeParseAsync(messageDto);
 	if (!validatedMessageDto) {
 		return {
 			error: '',
@@ -26,21 +20,27 @@ const sendEmail = async (messageDto: MessageDto) => {
 			rejectUnauthorized: false,
 		},
 	});
+	console.log('here');
 	try {
 		const info = await transporter.sendMail({
 			from: process.env.MAILER_USER,
-			to: validatedMessageDto.email,
+			to: validatedMessageDto.data?.email,
 			subject: `Message<${process.env.MAILER_USER}>`,
 			text: 'Message',
 			html: '',
 		});
 		return {
 			...info,
-			success: `Message delivered to ${info.accepted}`,
+			message: `Message delivered to ${info.accepted}`,
+			success: ' ',
+			error: null,
 		};
 	} catch (error) {
+		console.log(error);
 		return {
-			error: (error as Error)?.message,
+			message: (error as Error)?.message,
+			error: ' ',
+			success: null,
 		};
 	}
 };

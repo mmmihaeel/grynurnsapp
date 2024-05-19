@@ -1,6 +1,22 @@
 {
     "locale": "pl",
     "translations": {
+        "order-modal": {
+            "title": "Napisz do nas, a skontaktujemy się z Tobą",
+            "name_label": "Wpisz swoje imię",
+            "phonenumber_label": "Wpisz swój numer telefonu",
+            "email_label": "Wpisz swój adres e-mail",
+            "message_label": "Napisz do nas swoją wiadomość",
+            "name_placeholder": "Jan",
+            "phonenumber_placeholder": "+48 (123) 456-7890",
+            "email_placeholder": "your_email@example.com",
+            "message_placeholder": "Wiadomość",
+            "invalid_name": "Proszę wpisać swoje imię",
+            "invalid_email": "Wpisz poprawny adres e-mail",
+            "invalid_phonenumber": "Wpisz poprawny numer telefonu",
+            "message_max": "Wiadomość nie może przekraczać 1000 znaków",
+            "send": "Wyślij"
+        },
         "header": {
             "about": "O nas",
             "gallery": "Galeria",

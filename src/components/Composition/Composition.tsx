@@ -23,9 +23,12 @@ const Composition: FC<Props> = ({ products }) => {
         whileInView={{ opacity: 1, scale: 1, translateY: '0px' }}
         transition={{ duration: 1 }}
     >
-        {products.map((product) => {
+        {products.map((product, idx) => {
             return (
                 <motion.div
+                    initial={{ opacity: 0, translateX: '-80px' }}
+                    whileInView={{ opacity: 1, scale: 1, translateX: '0px' }}
+                    transition={{ duration: idx + 1, velocity: idx + 1 }}
                     className={styles.composition_product}
                     key={product?.product?.id}
                 >

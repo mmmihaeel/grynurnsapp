@@ -4,13 +4,13 @@ import styles from './Header.module.scss';
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useRef } from 'react';
 import Logo from '../../assets/icons/logo.svg';
-import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import LocaleSwitcher from './LocaleSwitcher';
+import { Link } from '@/navigation';
+import NextLink from 'next/link';
 
 const Header = () => {
     const router = useRouter();
-    const locale = useLocale();
     const headerRef = useRef<HTMLDivElement>(null);
     const t = useTranslations('translations.header');
     const currentLocale = useLocale();
@@ -18,7 +18,7 @@ const Header = () => {
 
     useEffect(() => {
         const header = headerRef?.current;
-        if (header && pathname === `/${currentLocale}`) {
+        if (header && pathname === `/`) {
             header.style.background = ``;
         } else if (header) {
             header.style.background = `#C29D86`;
@@ -45,7 +45,7 @@ const Header = () => {
         >
             <div
                 style={
-                    pathname === `/${currentLocale}`
+                    pathname === `/`
                         ? {
                             borderBottom: '1px solid #EDE0D4',
                             padding: '10px 0 0 0'
@@ -57,27 +57,27 @@ const Header = () => {
             >
                 <Logo onClick={handleLogoClick} className={styles.header_logo} />
                 <nav className={styles.header_nav}>
-                    <Link
+                    <NextLink
                         className={styles.header_nav_link}
-                        href={`/${locale}/#about-us`}
-                        locale={locale}
+                        href={`/${currentLocale}/#about-us`}
+                        locale={currentLocale as 'uk-UA'}
                     >
                         {t('about')}
-                    </Link>
+                    </NextLink>
                     <Link
                         className={styles.header_nav_link}
-                        href={`/${locale}/gallery`}
-                        locale={locale}
+                        href={`/gallery`}
+                        locale={currentLocale as 'uk-UA'}
                     >
                         {t('gallery')}
                     </Link>
-                    <Link
+                    <NextLink
                         className={styles.header_nav_link}
-                        href={`/${locale}/#contacts`}
-                        locale={locale}
+                        href={`${pathname}/#contacts`}
+                        locale={currentLocale}
                     >
                         {t('contacts')}
-                    </Link>
+                    </NextLink>
                 </nav>
                 <LocaleSwitcher />
             </div>

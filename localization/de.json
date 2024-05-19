@@ -1,6 +1,22 @@
 {
     "locale": "de",
     "translations": {
+        "order-modal": {
+            "title": "Schreiben Sie uns und wir werden uns mit Ihnen in Verbindung setzen",
+            "name_label": "Geben Sie Ihren Namen ein",
+            "phonenumber_label": "Geben Sie Ihre Telefonnummer ein",
+            "email_label": "Geben Sie Ihre E-Mail-Adresse ein",
+            "message_label": "Schreiben Sie uns Ihre Nachricht",
+            "name_placeholder": "Hans",
+            "phonenumber_placeholder": "+49 (30) 12345678",
+            "email_placeholder": "your_email@example.com",
+            "message_placeholder": "Nachricht",
+            "invalid_name": "Bitte geben Sie Ihren Namen ein",
+            "invalid_email": "Geben Sie eine gültige E-Mail-Adresse ein",
+            "invalid_phonenumber": "Geben Sie eine gültige Telefonnummer ein",
+            "message_max": "Nachricht darf nicht mehr als 1000 Zeichen lang sein",
+            "send": "Senden"
+        },
         "header": {
             "about": "Über uns",
             "gallery": "Galerie",

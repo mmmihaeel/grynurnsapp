@@ -1,0 +1,93 @@
+@import '../../../app/variables.scss';
+
+.advantages_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    background: $block-color center center/cover no-repeat scroll;
+    min-height: 580px;
+    margin: 0 auto;
+    z-index: 1;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    &_smallUrn {
+        z-index: -1;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 75px;
+        left: -122px;
+    }
+
+    &_largeUrn {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50px;
+        z-index: -1;
+        left: 15px;
+    }
+
+    &_text {
+        max-width: 680px;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        &_descr {
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 400;
+            font-family: 'Mariupol';
+            color: $main-color;
+            text-align: left;
+            font-weight: 400;
+        }
+    }
+
+    &_order {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        &_button {
+            background: $main-color;
+            padding: 12px 25px 12px 25px;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 400;
+            font-family: 'Mariupol';
+            color: $block-color;
+            text-align: left;
+            border: none;
+            font-weight: 400;
+
+            &:hover,
+            &:focus,
+            &:active {
+                outline: none;
+                background: none;
+                color: $main-color;
+                border: 1px solid $main-color;
+            }
+        }
+
+        &_descr {
+            width: 340px;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 400;
+            font-family: 'Mariupol';
+            color: $main-color;
+            text-align: left;
+            font-weight: 400;
+        }
+    }
+}

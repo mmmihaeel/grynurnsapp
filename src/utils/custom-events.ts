@@ -1,3 +1,5 @@
+'use client';
+
 function subscribeToEvent(
 	eventName: string,
 	listener: (data?: object) => void
