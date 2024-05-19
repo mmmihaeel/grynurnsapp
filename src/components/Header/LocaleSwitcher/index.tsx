@@ -9,11 +9,13 @@ import { motion } from 'framer-motion';
 
 const show = {
     opacity: 1,
+    scale: 1,
     display: 'block',
 };
 
 const hide = {
     opacity: 0,
+    scale: 0,
     transitionEnd: {
         display: 'none',
     },
@@ -88,24 +90,26 @@ const LocaleSwitcher: FC = () => {
             {showLocales && (
                 <motion.ul
                     className={styles.localeSwitcher_locales}
-                    initial={{ opacity: 0 }}
+                    initial={{ opacity: 0, scale: 0 }}
                     transition={{ duration: 0.2 }}
                     animate={showLocales ? show : hide}
                 >
-                    {locales.map((locale) => {
-                        return (
-                            <li
-                                className={styles.localeSwitcher_locales_locale}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    return handleLocaleChange(locale);
-                                }}
-                                key={locale}
-                            >
-                                {locale}
-                            </li>
-                        );
-                    })}
+                    {locales
+                        .filter((locale) => locale !== currentLocale)
+                        .map((locale) => {
+                            return (
+                                <li
+                                    className={styles.localeSwitcher_locales_locale}
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        return handleLocaleChange(locale);
+                                    }}
+                                    key={locale}
+                                >
+                                    {locale}
+                                </li>
+                            );
+                        })}
                 </motion.ul>
             )}
         </motion.aside>

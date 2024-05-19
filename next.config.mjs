@@ -8,6 +8,9 @@ const nextConfig = {
     devIndicators: {
         buildActivity: false,
     },
+    experimental: {
+        serverSourceMaps: false,
+    },
     productionBrowserSourceMaps: false,
     reactStrictMode: false,
     compress: true,

@@ -1,6 +1,21 @@
 {
     "locale": "fr",
     "translations": {
+        "Manifest": {
+            "name": "Urnes funéraires - GrynUrns"
+        },
+        "Metadata": {
+            "main": {
+                "title": "Urnes funéraires - GrynUrns",
+                "description": "Créez un hommage durable avec des urnes artisanales de GrynUrns. Nous proposons une large sélection d'urnes pour les humains et les animaux, avec la possibilité de personnaliser votre commande.",
+                "keywords": "urnes, cendres, crémation, funéraire, artisanal, personnalisé, animaux"
+            },
+            "gallery": {
+                "title": "Galerie d'urnes - GrynUrns",
+                "description": "Parcourez notre collection d'urnes artisanales, chacune conçue avec soin et souci du détail. Trouvez l'urne parfaite pour honorer votre bien-aimé.",
+                "keywords": "urnes, cendres, crémation, funéraire, artisanal, personnalisé, designs"
+            }
+        },
         "order-modal": {
             "title": "Écrivez-nous et nous vous contacterons",
             "name_label": "Entrez votre nom",
@@ -15,7 +30,9 @@
             "invalid_email": "Entrez une adresse e-mail valide",
             "invalid_phonenumber": "Entrez un numéro de téléphone valide",
             "message_max": "Le message ne doit pas dépasser 1000 caractères",
-            "send": "Envoyer"
+            "send": "Envoyer",
+            "success": "Votre message a été envoyé avec succès! Nous vous contacterons prochainement.",
+            "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard."
         },
         "header": {
             "about": "À propos de nous",

@@ -1,6 +1,21 @@
 {
     "locale": "pl",
     "translations": {
+        "Manifest": {
+            "name": "Urny na prochy - GrynUrns"
+        },
+        "Metadata": {
+            "main": {
+                "title": "Urny na prochy - GrynUrns",
+                "description": "Stwórz trwałą pamiątkę z ręcznie wykonanymi urnami od GrynUrns. Oferujemy szeroki wybór urn zarówno dla ludzi, jak i zwierząt domowych, z możliwością personalizacji zamówienia.",
+                "keywords": "urny, prochy, kremacja, pomnik, rękodzieło, na zamówienie, zwierzęta"
+            },
+            "gallery": {
+                "title": "Galeria urn - GrynUrns",
+                "description": "Przeglądaj naszą kolekcję ręcznie wykonanych urn,  każda z nich zaprojektowana z dbałością o szczegóły. Znajdź idealną urnę, aby uczcić pamięć bliskiej osoby.",
+                "keywords": "urny, prochy, kremacja, pomnik, rękodzieło, na zamówлення, wzory"
+            }
+        },
         "order-modal": {
             "title": "Napisz do nas, a skontaktujemy się z Tobą",
             "name_label": "Wpisz swoje imię",
@@ -15,7 +30,9 @@
             "invalid_email": "Wpisz poprawny adres e-mail",
             "invalid_phonenumber": "Wpisz poprawny numer telefonu",
             "message_max": "Wiadomość nie może przekraczać 1000 znaków",
-            "send": "Wyślij"
+            "send": "Wyślij",
+            "success": "Twoja wiadomość została wysłana pomyślnie! Skontaktujemy się z Tobą wkrótce.",
+            "error": "Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie później."
         },
         "header": {
             "about": "O nas",

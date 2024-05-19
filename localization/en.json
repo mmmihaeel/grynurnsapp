@@ -1,6 +1,21 @@
 {
     "locale": "en",
     "translations": {
+        "Manifest": {
+            "name": "Urns for Ashes - GrynUrns"
+        },
+        "Metadata": {
+            "main": {
+                "title": "Urns for Ashes - GrynUrns",
+                "description": "Create a lasting tribute with handcrafted urns from GrynUrns. We offer a wide selection of urns for both humans and pets, with the option to customize your order.",
+                "keywords": "urns, ashes, cremation, memorial, handcrafted, custom, pets"
+            },
+            "gallery": {
+                "title": "Urn Gallery - GrynUrns",
+                "description": "Browse our collection of handcrafted urns, each designed with care and attention to detail. Find the perfect urn to honor your loved one.",
+                "keywords": "urns, ashes, cremation, memorial, handcrafted, custom, designs"
+            }
+        },
         "order-modal": {
             "title": "Write to us and we'll get in touch",
             "name_label": "Enter your name",
@@ -15,7 +30,9 @@
             "invalid_email": "Enter a valid email address",
             "invalid_phonenumber": "Enter a valid phone number",
             "message_max": "Message cannot exceed 1000 characters",
-            "send": "Send"
+            "send": "Send",
+            "success": "Your message has been sent successfully! We will get in touch with you soon.",
+            "error": "An error occurred while sending your message. Please try again later."
         },
         "header": {
             "about": "About us",

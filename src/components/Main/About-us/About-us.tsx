@@ -1,4 +1,5 @@
 'use client';
+
 import { FC } from 'react';
 import styles from './About-us.module.scss';
 import { useLocale, useTranslations } from 'next-intl';
@@ -78,26 +79,26 @@ const AboutUsSection: FC = () => {
                     >
                         {t('p-3')}
                     </motion.p>
-                </motion.div>
-                <motion.div
-                    initial={{
-                        opacity: 0,
-                        bottom: '745px',
-                        right: '-500px',
-                    }}
-                    whileInView={{
-                        opacity: 1,
-                        bottom: '145px',
-                        right: '-200px',
-                    }}
-                    transition={{ duration: 0.5 }}
-                    className={styles.about_us_section_leftAside}
-                >
-                    <Image
-                        fill
-                        alt={eternalRest?.title?.[currentLocale as 'en-GB']}
-                        src={eternalRest?.images?.[0]}
-                    />
+                    <motion.div
+                        initial={{
+                            opacity: 0,
+                            bottom: '745px',
+                            right: '-500px',
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            bottom: '145px',
+                            right: '-200px',
+                        }}
+                        transition={{ duration: 0.5 }}
+                        className={styles.about_us_section_leftAside}
+                    >
+                        <Image
+                            fill
+                            alt={eternalRest?.title?.[currentLocale as 'en-GB']}
+                            src={eternalRest?.images?.[0]}
+                        />
+                    </motion.div>
                 </motion.div>
             </div>
         </motion.section>

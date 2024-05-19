@@ -1,4 +1,5 @@
 'use client';
+
 import { FC } from 'react';
 import styles from './Advantages.module.scss';
 import { useTranslations } from 'next-intl';

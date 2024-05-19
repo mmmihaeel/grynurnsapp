@@ -11,10 +11,12 @@
     padding-bottom: 5%;
     margin: 0 auto;
     height: 100vh;
+    min-height: 900px;
     background: url('../../../assets/images/backgrounds/main-composition-1.webp') center center/cover no-repeat scroll;
 
-    @media (max-width: 1110px) {
+    @media (max-width: 834px) {
         background: url('../../../assets/images/backgrounds/main-composition-2.webp') center center/cover no-repeat scroll;
+        min-height: 1000px;
     }
 
     &_title {
@@ -65,9 +67,11 @@
             &:hover,
             &:focus,
             &:active {
+                color: $block-color;
+                border: 1px solid $block-color;
+                background-color: $main-color;
                 outline: none;
                 opacity: 0.5;
-                border: none;
             }
         }
 
@@ -89,8 +93,9 @@
             &:hover,
             &:focus,
             &:active {
-                outline: none;
                 border: 1px solid $block-color;
+                background-color: $main-color;
+                outline: none;
                 opacity: 0.5;
             }
         }

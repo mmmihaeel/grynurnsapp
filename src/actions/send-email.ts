@@ -1,13 +1,16 @@
 'use server';
+
 import { MessageDto } from '@/types/message.type';
+import emailTemplate from '@/utils/email-template';
 import { MessageSchema } from '@/utils/validation';
 import nodemailer from 'nodemailer';
 
 const sendEmail = async (messageDto: MessageDto) => {
 	const validatedMessageDto = await MessageSchema.safeParseAsync(messageDto);
-	if (!validatedMessageDto) {
+	if (!validatedMessageDto.success) {
 		return {
-			error: '',
+			message: 'Validation failed!',
+			error: 'error',
 		};
 	}
 	const transporter = nodemailer.createTransport({
@@ -20,26 +23,25 @@ const sendEmail = async (messageDto: MessageDto) => {
 			rejectUnauthorized: false,
 		},
 	});
-	console.log('here');
 	try {
 		const info = await transporter.sendMail({
 			from: process.env.MAILER_USER,
-			to: validatedMessageDto.data?.email,
+			to: process.env.MAILER_USER,
 			subject: `Message<${process.env.MAILER_USER}>`,
 			text: 'Message',
-			html: '',
+			html: emailTemplate(validatedMessageDto?.data as MessageDto),
 		});
 		return {
 			...info,
 			message: `Message delivered to ${info.accepted}`,
-			success: ' ',
+			success: 'success',
 			error: null,
 		};
 	} catch (error) {
 		console.log(error);
 		return {
 			message: (error as Error)?.message,
-			error: ' ',
+			error: 'error',
 			success: null,
 		};
 	}

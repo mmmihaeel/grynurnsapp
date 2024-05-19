@@ -1,4 +1,5 @@
 'use client';
+
 import styles from './Gallery.module.scss';
 import { ProductsContext } from '@/context/products.context';
 import { Product } from '@/types/product.type';

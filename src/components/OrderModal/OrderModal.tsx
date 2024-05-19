@@ -86,14 +86,18 @@ const OrderModal: FC = () => {
         startTransition(async () => {
             const data = await sendEmail(dto);
             console.log(data);
+            setTimeout(() => {
+                setError(null);
+                setSuccess(null);
+                setShowModal(false);
+            }, 6000);
             if (data?.error) {
                 console.error(data?.message);
-                messageForm.reset();
                 return setError(data?.error);
             }
             if (data?.success) {
-                console.log(data?.success);
                 messageForm.reset();
+                console.log(data?.success);
                 return setSuccess(data?.success);
             }
         });
@@ -225,8 +229,8 @@ const OrderModal: FC = () => {
                                 </button>
                             </form>
                         </FormProvider>
-                        {success && <div>{t(success)}</div>}
-                        {error && <div>{t(error)}</div>}
+                        {success && <div className={styles.orderModal_success}>{t(success)}</div>}
+                        {error && <div className={styles.orderModal_error}>{t(error)}</div>}
                     </motion.div>
                 </>
             )}

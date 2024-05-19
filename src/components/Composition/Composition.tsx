@@ -1,4 +1,5 @@
 "use client";
+
 import { Product } from "@/types/product.type";
 import { FC } from "react";
 import Image from 'next/image';

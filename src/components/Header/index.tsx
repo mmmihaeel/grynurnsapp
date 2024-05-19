@@ -1,4 +1,5 @@
 'use client';
+
 import { motion } from 'framer-motion';
 import styles from './Header.module.scss';
 import { usePathname, useRouter } from 'next/navigation';
@@ -8,8 +9,12 @@ import { useLocale, useTranslations } from 'next-intl';
 import LocaleSwitcher from './LocaleSwitcher';
 import { Link } from '@/navigation';
 import NextLink from 'next/link';
+import { useMediaQuery } from 'react-responsive';
+import SmallLogo from '@/assets/icons/small-logo.svg';
 
 const Header = () => {
+    const isTablet = useMediaQuery({ maxWidth: '750px' });
+
     const router = useRouter();
     const headerRef = useRef<HTMLDivElement>(null);
     const t = useTranslations('translations.header');
@@ -18,7 +23,7 @@ const Header = () => {
 
     useEffect(() => {
         const header = headerRef?.current;
-        if (header && pathname === `/`) {
+        if (header && (pathname === `/${currentLocale}` || pathname === `/`)) {
             header.style.background = ``;
         } else if (header) {
             header.style.background = `#C29D86`;
@@ -33,6 +38,8 @@ const Header = () => {
         router.push('/');
     };
 
+    console.log(pathname);
+
     return (
         <motion.header
             initial={{ y: 10, opacity: 0 }}
@@ -45,7 +52,7 @@ const Header = () => {
         >
             <div
                 style={
-                    pathname === `/`
+                    pathname === `/${currentLocale}` || pathname === `/`
                         ? {
                             borderBottom: '1px solid #EDE0D4',
                             padding: '10px 0 0 0'
@@ -55,7 +62,8 @@ const Header = () => {
                 id="header-section"
                 className={styles.header_wrapper}
             >
-                <Logo onClick={handleLogoClick} className={styles.header_logo} />
+                {!isTablet && <Logo onClick={handleLogoClick} className={styles.header_logo} />}
+                {isTablet && <SmallLogo onClick={handleLogoClick} className={styles.header_logo} />}
                 <nav className={styles.header_nav}>
                     <NextLink
                         className={styles.header_nav_link}

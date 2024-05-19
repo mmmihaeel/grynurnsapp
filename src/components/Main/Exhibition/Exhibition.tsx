@@ -1,4 +1,5 @@
 'use client';
+
 import { FC, useCallback } from 'react';
 import styles from './Exhibition.module.scss';
 import { useLocale, useTranslations } from 'next-intl';

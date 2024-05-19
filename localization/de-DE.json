@@ -1,6 +1,21 @@
 {
     "locale": "de",
     "translations": {
+        "Manifest": {
+            "name": "Ascheurnen - GrynUrns"
+        },
+        "Metadata": {
+            "main": {
+                "title": "Ascheurnen - GrynUrns",
+                "description": "Schaffen Sie mit handgefertigten Urnen von GrynUrns eine bleibende Erinnerung. Wir bieten eine große Auswahl an Urnen sowohl für Menschen als auch für Haustiere an, mit der Möglichkeit, Ihre Bestellung zu individualisieren.",
+                "keywords": "Ascheurnen, Asche, Feuerbestattung, Denkmal, handgefertigt, individuell, Haustiere"
+            },
+            "gallery": {
+                "title": "Urnen Galerie - GrynUrns",
+                "description": "Durchstöbern Sie unsere Sammlung handgefertigter Urnen, jede mit Liebe zum Detail entworfen. Finden Sie die perfekte Urne, um die Erinnerung an Ihre Lieben zu ehren.",
+                "keywords": "Ascheurnen, Asche, Feuerbestattung, Denkmal, handgefertigt, individuell, Designs"
+            }
+        },
         "order-modal": {
             "title": "Schreiben Sie uns und wir werden uns mit Ihnen in Verbindung setzen",
             "name_label": "Geben Sie Ihren Namen ein",
@@ -15,7 +30,9 @@
             "invalid_email": "Geben Sie eine gültige E-Mail-Adresse ein",
             "invalid_phonenumber": "Geben Sie eine gültige Telefonnummer ein",
             "message_max": "Nachricht darf nicht mehr als 1000 Zeichen lang sein",
-            "send": "Senden"
+            "send": "Senden",
+            "success": "Ihre Nachricht wurde erfolgreich gesendet! Wir werden uns in Kürze mit Ihnen in Verbindung setzen.",
+            "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
         },
         "header": {
             "about": "Über uns",
@@ -37,13 +54,13 @@
             },
             "manufacturing": {
                 "title": "STUFEN DER HERSTELLUNG",
-                "1-ste": "Keramikmasse herstellen (glatter);",
+                "1-step": "Keramikmasse herstellen (glatter);",
                 "2-step": "Den Schlicker in Formen gießen;",
                 "3-step": "Nützliches Brennen bei 800℃ in einem Elektroofen;",
                 "4-step": "Produkt glasieren;",
-                "5-stufig": "Bündiges Brennen bei 1330℃ in einem Gasofen;",
+                "5-step": "Bündiges Brennen bei 1330℃ in einem Gasofen;",
                 "6-step": "Das Produkt mit Überglasurfarben lackieren;",
-                "7-stufig": "Brennen bei einer Temperatur von 800 °C in einem Elektroofen."
+                "7-step": "Brennen bei einer Temperatur von 800 °C in einem Elektroofen."
             },
             "h2-title": "Wählen Sie eine Urne, die Ihre<br/> Liebe widerspiegelt"
         },

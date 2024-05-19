@@ -16,6 +16,32 @@
         background-color: rgba(0, 0, 0, 0.5);
     }
 
+    &_success {
+        line-height: 26px;
+        margin-top: 8px;
+        font-style: normal;
+        text-align: center;
+        font-family: 'Mariupol';
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        color: $main-color;
+        line-height: normal;
+    }
+
+    &_error {
+        line-height: 26px;
+        margin-top: 8px;
+        font-style: normal;
+        text-align: center;
+        font-family: 'Mariupol';
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        color: $warning-color;
+        line-height: normal;
+    }
+
     &_modal {
         position: fixed;
         transform: translate(-50%, -50%);
@@ -109,6 +135,7 @@
 
                 textarea,
                 input {
+                    resize: none;
                     width: 100%;
                     background: $main-color;
                     color: $block-color;
@@ -214,6 +241,10 @@
         text-align: center;
         font-weight: 400;
         transition: .5 ease;
+
+        &:disabled {
+            opacity: 0.5;
+        }
 
         &:hover,
         &:focus,

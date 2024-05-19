@@ -5,7 +5,10 @@ import { getTranslations } from 'next-intl/server';
 
 export default async function manifest(): Promise<MetadataRoute.Manifest> {
 	const locale = defaultLocale;
-	const t = await getTranslations({ locale, namespace: 'Manifest' });
+	const t = await getTranslations({
+		locale,
+		namespace: 'translations.Manifest',
+	});
 
 	return {
 		name: t('name'),

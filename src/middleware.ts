@@ -6,6 +6,38 @@ export default createMiddleware({
 	pathnames,
 	localePrefix,
 	defaultLocale: defaultLocale,
+	// domains: [
+	// 	{
+	// 		domain: 'grynurns.com',
+	// 		defaultLocale: 'en-GB',
+	// 		locales: ['en-GB'],
+	// 	},
+	// 	{
+	// 		domain: 'grynurns.fr',
+	// 		defaultLocale: 'fr-FR',
+	// 		locales: ['fr-FR'],
+	// 	},
+	// 	{
+	// 		domain: 'grynurns.pl',
+	// 		defaultLocale: 'pl-PL',
+	// 		locales: ['pl-PL'],
+	// 	},
+	// 	{
+	// 		domain: 'grynurns.de',
+	// 		defaultLocale: 'de-DE',
+	// 		locales: ['de-DE'],
+	// 	},
+	// 	{
+	// 		domain: 'grynurns.uk',
+	// 		defaultLocale: 'en-GB',
+	// 		locales: ['en-GB'],
+	// 	},
+	// 	{
+	// 		domain: 'grynurns.com.ua',
+	// 		defaultLocale: 'uk-UA',
+	// 		locales: ['uk-UA'],
+	// 	},
+	// ],
 });
 
 export const config = {

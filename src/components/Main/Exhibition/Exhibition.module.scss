@@ -99,8 +99,9 @@
         &:focus,
         &:active {
             border: 1px solid $block-color;
+            background-color: $block-color;
+            color: $main-color;
             outline: none;
-            opacity: 0.5;
         }
     }
 }
