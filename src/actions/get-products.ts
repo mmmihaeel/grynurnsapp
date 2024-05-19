@@ -4,7 +4,9 @@ import { host } from '@/i18n.config';
 import { Product } from '@/types/product.type';
 
 const getProducts = async () => {
-	const res = await fetch(`${host}/products/products.json`, {
+	const url = `${host}/products/products.json`;
+	console.log(url);
+	const res = await fetch(url, {
 		cache: 'force-cache',
 	});
 	if (!res.ok) {
