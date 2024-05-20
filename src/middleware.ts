@@ -6,6 +6,7 @@ export default createMiddleware({
 	pathnames,
 	localePrefix,
 	defaultLocale: defaultLocale,
+	alternateLinks: true,
 	domains: [
 		{
 			domain: String(process.env.VERCEL_URL),
