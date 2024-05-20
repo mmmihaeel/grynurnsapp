@@ -13,6 +13,12 @@
     margin: 0 auto;
     flex-wrap: wrap;
 
+    @media (max-width: 800px) {
+        // min-height: 306px;
+        min-height: 420px;
+        padding: 35px 0 0;
+    }
+
     &_title {
         font-family: "Mariupol", serif;
         font-weight: 400;
@@ -40,6 +46,19 @@
         margin-top: 70px;
         align-items: center;
         justify-content: space-around;
+
+        @media (max-width: 1200px) {
+            width: 70%;
+        }
+
+        @media (max-width: 1000px) {
+            width: 80%;
+        }
+
+        @media (max-width: 800px) {
+            margin-top: 40px;
+            flex-direction: column;
+        }
     }
 
     &_contact {
@@ -48,6 +67,10 @@
         align-items: center;
         height: 200px;
         justify-content: flex-start;
+
+        @media (max-width: 800px) {
+            height: 150px;
+        }
     }
 
     &_label {
@@ -59,6 +82,17 @@
         font-size: 26px;
         line-height: 25px;
         margin-bottom: 0;
+
+        @media (max-width: 800px) {
+            font-size: 20px;
+            line-height: 21px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 450px) {
+            font-size: 17px;
+            line-height: 25px;
+        }
     }
 
     &_link {
@@ -72,6 +106,18 @@
         font-size: 26px;
         line-height: 25px;
         margin-bottom: 0;
+
+        @media (max-width: 800px) {
+            font-size: 20px;
+            margin: 15px 0;
+            line-height: 21px;
+        }
+
+        @media (max-width: 450px) {
+            font-size: 16px;
+            margin: 15px 0;
+            line-height: 15px;
+        }
 
         &:hover,
         &:focus,

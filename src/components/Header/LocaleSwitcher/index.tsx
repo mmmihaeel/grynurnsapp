@@ -6,6 +6,7 @@ import { useTransition } from 'react';
 import { useRouter, usePathname } from '@/navigation';
 import { locales } from '@/i18n.config';
 import { motion } from 'framer-motion';
+import { useMediaQuery } from 'react-responsive';
 
 const show = {
     opacity: 1,
@@ -25,7 +26,7 @@ const LocaleSwitcher: FC = () => {
     const router = useRouter();
     const [isPending, startTransition] = useTransition();
     const [showLocales, setShowLocales] = useState<boolean>(false);
-
+    const isTablet = useMediaQuery({ maxWidth: '700px' });
     const pathname = usePathname();
     const params = useParams();
 
@@ -67,10 +68,12 @@ const LocaleSwitcher: FC = () => {
                     animate={
                         showLocales
                             ? {
-                                transform: 'translate(-50%, -50%) rotate(-180deg)',
+                                transform: `translate(-50%, -50%) rotate(-180deg) ${isTablet ? 'scale(0.5)' : ""}`,
                                 top: '12px',
                             }
-                            : { transform: 'translate(-50%, -50%)' }
+                            : {
+                                transform: `translate(-50%, -50%) ${isTablet ? 'scale(0.5)' : ""}`
+                            }
                     }
                     width="19"
                     height="11"

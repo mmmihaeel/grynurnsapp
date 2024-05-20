@@ -3,12 +3,39 @@
 .composition {
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 50%;
+    max-width: 1200px;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 30px;
+
+    @media(max-width: 1200px) {
+        max-width: 85%;
+    }
+
+    @media(max-width: 800px) {
+        max-width: 90%;
+        gap: 20px;
+    }
+
+    @media(max-width: 670px) {
+        flex-direction: row;
+        max-width: 95%;
+        gap: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    &_product_column {
+        width: 45%;
+        gap: 10px;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
     &_product {
         display: flex;
@@ -30,6 +57,16 @@
                 font-weight: 400;
                 font-size: 22px;
                 line-height: 22px;
+
+                @media(max-width: 1200px) {
+                    font-size: 18px;
+                    line-height: 19px;
+                }
+
+                @media(max-width: 800px) {
+                    font-size: 16px;
+                    line-height: 17px;
+                }
             }
 
             &_descr {
@@ -40,6 +77,16 @@
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 20px;
+
+                @media(max-width: 1200px) {
+                    font-size: 16px;
+                    line-height: 17px;
+                }
+
+                @media(max-width: 800px) {
+                    font-size: 13px;
+                    line-height: 14px;
+                }
             }
         }
 
@@ -48,6 +95,35 @@
             width: 100%;
             height: 551px;
             position: relative;
+
+            @media(max-width: 1200px) {
+                height: 430px;
+            }
+
+            @media(max-width: 1000px) {
+                height: 340px;
+            }
+
+            @media(max-width: 700px) {
+                height: 244px;
+            }
+
+            @media(max-width: 670px) {
+                height: 344px;
+                //height: 165px;
+            }
+
+            @media(max-width: 500px) {
+                height: 244px;
+            }
+
+            @media(max-width: 450px) {
+                height: 244px;
+            }
+
+            @media(max-width: 370px) {
+                height: 165px;
+            }
 
             img {
                 object-fit: cover;

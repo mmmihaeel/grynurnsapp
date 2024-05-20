@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useProductsContext } from '@/context/products.context';
 import { Product } from '@/types/product.type';
+import { useMediaQuery } from 'react-responsive';
 
 const AboutUsSection: FC = () => {
     const t = useTranslations('translations.main.about-us');
@@ -18,6 +19,8 @@ const AboutUsSection: FC = () => {
         (product) => product.id === 'Talisman-of-the-Heart'
     ) as Product;
     const currentLocale = useLocale();
+
+    const isTablet = useMediaQuery({ maxWidth: '900px' });
 
     return (
         <motion.section
@@ -48,9 +51,9 @@ const AboutUsSection: FC = () => {
                     className={styles.about_us_section_text}
                 >
                     <motion.h2
-                        initial={{ opacity: 0, translateY: '-80px' }}
-                        whileInView={{ opacity: 1, scale: 1, translateY: '0px' }}
-                        transition={{ duration: 1 }}
+                        initial={{ opacity: 0, translateX: '-80px' }}
+                        whileInView={{ opacity: 1, scale: 1, translateX: '0px' }}
+                        transition={{ duration: 0.5 }}
                         className={styles.about_us_section_text_title}
                     >
                         {t('h2-title')}
@@ -82,13 +85,14 @@ const AboutUsSection: FC = () => {
                     <motion.div
                         initial={{
                             opacity: 0,
-                            bottom: '745px',
-                            right: '-500px',
+                            bottom: isTablet ? '145px' : '745px',
+                            right: isTablet ? '200px' : '-500px',
                         }}
                         whileInView={{
                             opacity: 1,
-                            bottom: '145px',
-                            right: '-200px',
+                            bottom: isTablet ? '115px' : '145px',
+                            right: isTablet ? 'auto' : '-400px',
+                            left: isTablet ? '-90px' : 'auto'
                         }}
                         transition={{ duration: 0.5 }}
                         className={styles.about_us_section_leftAside}

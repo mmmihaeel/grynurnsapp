@@ -4,6 +4,28 @@
     width: 100%;
     padding: 80px;
     position: relative;
+    overflow: hidden;
+
+    @media(max-width: 850px) {
+        padding: 40px;
+    }
+
+    @media(max-width: 450px) {
+        padding: 63px 85px;
+        margin-top: 30px;
+    }
+
+    @media(max-width: 420px) {
+        padding: 35px 60px;
+    }
+
+    @media(max-width: 370px) {
+        padding: 15px 40px;
+    }
+
+    @media(max-width: 350px) {
+        padding: 5px 30px;
+    }
 
     &_title {
         font-family: "Mariupol", serif;
@@ -48,20 +70,24 @@
         width: 100%;
         position: relative;
 
+        @media (max-width: 856px) {
+            padding: 35px 0px;
+        }
+
         @media(max-width: 450px) {
             margin-top: 25px;
         }
 
         @media (max-width: 390px) {
-            padding: 20px 45px;
+            padding: 20px 0px;
         }
 
         @media (max-width: 370px) {
-            padding: 20px 35px;
+            padding: 20px 0cm;
         }
 
         @media (max-width: 340px) {
-            padding: 20px 25px;
+            padding: 20px 0px;
         }
 
         &_step {

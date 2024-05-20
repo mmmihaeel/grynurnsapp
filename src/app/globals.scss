@@ -90,6 +90,10 @@ section {
     display: block
 }
 
+section {
+    overflow: hidden;
+}
+
 [tabindex="-1"]:focus {
     outline: 0 !important
 }

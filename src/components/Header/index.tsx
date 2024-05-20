@@ -13,6 +13,7 @@ import { useMediaQuery } from 'react-responsive';
 import SmallLogo from '@/assets/icons/small-logo.svg';
 
 const Header = () => {
+    const isDesktop = useMediaQuery({ minWidth: '751px' });
     const isTablet = useMediaQuery({ maxWidth: '750px' });
 
     const router = useRouter();
@@ -60,7 +61,7 @@ const Header = () => {
                 id="header-section"
                 className={styles.header_wrapper}
             >
-                {!isTablet && <Logo onClick={handleLogoClick} className={styles.header_logo} />}
+                {isDesktop && <Logo onClick={handleLogoClick} className={styles.header_logo} />}
                 {isTablet && <SmallLogo onClick={handleLogoClick} className={styles.header_logo} />}
                 <nav className={styles.header_nav}>
                     <NextLink

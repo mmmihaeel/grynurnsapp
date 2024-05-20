@@ -23,7 +23,6 @@ export async function generateMetadata({
         keywords: t('gallery.keywords'),
         referrer: 'strict-origin-when-cross-origin',
         themeColor: '#EDE0D4',
-        viewport: 'width=device-width, initial-scale=1',
         creator: 'grynurns@gmail.com',
         publisher: 'grynurns@gmail.com',
         robots: 'index, follow',

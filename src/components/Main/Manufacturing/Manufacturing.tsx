@@ -67,23 +67,25 @@ const ManufacturingSection: FC = () => {
                     { cx: -90, cy: 660, tx: 200, ty: -20 },
                     { cx: 135, cy: 670, tx: 215, ty: 50 },
                 ]
-                : isMobile ? [
-                    { cx: -60, cy: 125, tx: -15, ty: 90 },
-                    { cx: 115, cy: 160, tx: -25, ty: 80 },
-                    { cx: 115, cy: 280, tx: -60, ty: 15 },
-                    { cx: -65, cy: 315, tx: -30, ty: -15 },
-                    { cx: -135, cy: 385, tx: 120, ty: 20 },
-                    { cx: -90, cy: 475, tx: 115, ty: -10 },
-                    { cx: 65, cy: 485, tx: 125, ty: 30 },
-                ] : [
-                    { cx: -50, cy: 85, tx: -15, ty: 70 },
-                    { cx: 115, cy: 120, tx: -25, ty: 80 },
-                    { cx: 115, cy: 240, tx: -60, ty: 15 },
-                    { cx: -65, cy: 275, tx: -30, ty: -15 },
-                    { cx: -135, cy: 345, tx: 120, ty: 20 },
-                    { cx: -90, cy: 425, tx: 95, ty: -10 },
-                    { cx: 65, cy: 445, tx: 35, ty: 70 },
-                ];
+                : isMobile
+                    ? [
+                        { cx: -60, cy: 125, tx: -15, ty: 90 },
+                        { cx: 115, cy: 160, tx: -25, ty: 80 },
+                        { cx: 115, cy: 280, tx: -60, ty: 15 },
+                        { cx: -65, cy: 315, tx: -30, ty: -15 },
+                        { cx: -135, cy: 385, tx: 120, ty: 20 },
+                        { cx: -90, cy: 475, tx: 115, ty: -10 },
+                        { cx: 65, cy: 485, tx: 125, ty: 30 },
+                    ]
+                    : [
+                        { cx: -50, cy: 85, tx: -15, ty: 70 },
+                        { cx: 115, cy: 120, tx: -25, ty: 80 },
+                        { cx: 115, cy: 240, tx: -60, ty: 15 },
+                        { cx: -65, cy: 275, tx: -30, ty: -15 },
+                        { cx: -135, cy: 345, tx: 120, ty: 20 },
+                        { cx: -90, cy: 425, tx: 95, ty: -10 },
+                        { cx: 55, cy: 425, tx: 35, ty: 70 },
+                    ];
 
         return steps.map((image, index) => (
             <motion.div
@@ -124,11 +126,14 @@ const ManufacturingSection: FC = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className={styles.manufacturing_section}>
+            className={styles.manufacturing_section}
+        >
             <motion.h2
-                initial={{ opacity: 0, translateY: '-80px' }}
-                whileInView={{ opacity: 1, scale: 1, translateY: '0px' }}
-                transition={{ duration: 1 }} className={styles.manufacturing_section_title}>
+                initial={{ opacity: 0, translateX: '-80px' }}
+                whileInView={{ opacity: 1, scale: 1, translateX: '0px' }}
+                transition={{ duration: 0.5 }}
+                className={styles.manufacturing_section_title}
+            >
                 {t('title')}
             </motion.h2>
             <div className={styles.manufacturing_section_steps_wrapper}>
