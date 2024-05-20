@@ -38,8 +38,6 @@ const Header = () => {
         router.push('/');
     };
 
-    console.log(pathname);
-
     return (
         <motion.header
             initial={{ y: 10, opacity: 0 }}

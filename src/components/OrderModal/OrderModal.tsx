@@ -85,7 +85,6 @@ const OrderModal: FC = () => {
         setSuccess(null);
         startTransition(async () => {
             const data = await sendEmail(dto);
-            console.log(data);
             setTimeout(() => {
                 setError(null);
                 setSuccess(null);

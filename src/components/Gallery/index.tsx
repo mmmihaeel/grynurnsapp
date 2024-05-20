@@ -5,10 +5,11 @@ import { ProductsContext } from '@/context/products.context';
 import { Product } from '@/types/product.type';
 import { motion } from 'framer-motion';
 import { FC } from 'react';
-import Composition from '../Composition/Composition';
 import { useLocale, useTranslations } from 'next-intl';
-import AdvantagesSection from './Advantages/Advantages';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
+const Composition = dynamic(() => import('../Composition/Composition'), { ssr: false });
+const AdvantagesSection = dynamic(() => import('./Advantages/Advantages'), { ssr: false });
 
 type Props = {
     products: Product[];

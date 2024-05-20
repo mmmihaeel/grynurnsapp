@@ -6,6 +6,8 @@ import { MessageSchema } from '@/utils/validation';
 import nodemailer from 'nodemailer';
 
 const sendEmail = async (messageDto: MessageDto) => {
+	console.log(process.env);
+
 	const validatedMessageDto = await MessageSchema.safeParseAsync(messageDto);
 	if (!validatedMessageDto.success) {
 		return {

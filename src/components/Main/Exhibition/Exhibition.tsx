@@ -7,7 +7,8 @@ import { motion } from 'framer-motion';
 import { useProductsContext } from '@/context/products.context';
 import { useRouter } from 'next/navigation';
 import { Product } from '@/types/product.type';
-import Composition from '@/components/Composition/Composition';
+import dynamic from 'next/dynamic';
+const Composition = dynamic(() => import('@/components/Composition/Composition'), { ssr: false });
 
 const ExhibitionSection: FC = () => {
     const t = useTranslations('translations');
