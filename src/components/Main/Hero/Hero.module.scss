@@ -65,9 +65,14 @@
             line-height: 18px;
         }
 
-        @media (max-width: 350px) {
+        @media (max-width: 400px) {
             font-size: 14px;
-            line-height: 15px;
+            line-height: 14px;
+        }
+
+        @media (max-width: 350px) {
+            font-size: 13px;
+            line-height: 14px;
         }
 
         strong {
