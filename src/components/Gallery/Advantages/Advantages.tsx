@@ -11,10 +11,13 @@ import { publishEvent } from '@/utils/custom-events';
 const AdvantagesSection: FC = () => {
     const t = useTranslations('translations');
 
-    const handleOrderButtonClick = useCallback((e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        e.preventDefault();
-        publishEvent('showModal');
-    }, []);
+    const handleOrderButtonClick = useCallback(
+        (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+            e.preventDefault();
+            publishEvent('showModal');
+        },
+        []
+    );
 
     return (
         <motion.section
@@ -31,25 +34,22 @@ const AdvantagesSection: FC = () => {
                     whileInView={{ opacity: 1, scale: 1, translateX: '0px' }}
                     transition={{ duration: 0.5 }}
                     className={styles.advantages_section_text_descr}
-                >
-                    {t('gallery.advantages.1')}
-                </motion.p>
+                    dangerouslySetInnerHTML={{ __html: t.raw('gallery.advantages.1') }}
+                />
                 <motion.p
                     initial={{ opacity: 0, translateX: '-80px' }}
                     whileInView={{ opacity: 1, scale: 1, translateX: '0px' }}
                     transition={{ duration: 0.8 }}
                     className={styles.advantages_section_text_descr}
-                >
-                    {t('gallery.advantages.2')}
-                </motion.p>
+                    dangerouslySetInnerHTML={{ __html: t.raw('gallery.advantages.2') }}
+                />
                 <motion.p
                     initial={{ opacity: 0, translateX: '-80px' }}
                     whileInView={{ opacity: 1, scale: 1, translateX: '0px' }}
                     transition={{ duration: 1 }}
                     className={styles.advantages_section_text_descr}
-                >
-                    {t('gallery.advantages.3')}
-                </motion.p>
+                    dangerouslySetInnerHTML={{ __html: t.raw('gallery.advantages.3') }}
+                />
             </div>
             <div className={styles.advantages_section_order}>
                 <LargeUrn className={styles.advantages_section_largeUrn} />

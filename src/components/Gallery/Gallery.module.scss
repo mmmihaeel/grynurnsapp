@@ -40,5 +40,10 @@
             font-size: 26px;
             line-height: 28px;
         }
+
+        @media(max-width: 650px) {
+            margin: 100px auto 0;
+            margin-bottom: 20px;
+        }
     }
 }

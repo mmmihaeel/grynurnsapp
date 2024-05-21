@@ -78,7 +78,7 @@ const ManufacturingSection: FC = () => {
                         { cx: 65, cy: 485, tx: 125, ty: 30 },
                     ]
                     : [
-                        { cx: -50, cy: 85, tx: -15, ty: 70 },
+                        { cx: -50, cy: 85, tx: -15, ty: 75 },
                         { cx: 115, cy: 120, tx: -25, ty: 80 },
                         { cx: 115, cy: 240, tx: -60, ty: 15 },
                         { cx: -65, cy: 275, tx: -30, ty: -15 },
