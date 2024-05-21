@@ -8,15 +8,15 @@ export default createMiddleware({
 	defaultLocale: defaultLocale,
 	alternateLinks: true,
 	domains: [
-		// {
-		// 	domain: String(process.env.VERCEL_URL),
-		// 	defaultLocale: 'en-GB',
-		// 	// locales: ['en-GB', 'de-DE', 'fr-FR', 'pl-PL', 'uk-UA'],
-		// },
+		{
+			domain: String(process.env.VERCEL_URL),
+			defaultLocale: 'en-GB',
+			locales: ['en-GB', 'de-DE', 'fr-FR', 'pl-PL', 'uk-UA'],
+		},
 		{
 			domain: String(process.env.COM_DOMAIN),
 			defaultLocale: 'en-GB',
-			locales: ['en-GB'],
+			locales: ['en-GB', 'de-DE', 'fr-FR', 'pl-PL', 'uk-UA'],
 		},
 		{
 			domain: String(process.env.FR_DOMAIN),
