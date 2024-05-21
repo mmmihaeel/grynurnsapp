@@ -38,18 +38,24 @@ const Footer = () => {
 
                     <Link
                         className={styles.footer_link}
-                        href={'tel:+38 (050) 347 42 76'}
+                        href={'tel:+38 050 347 42 76'}
                         id="phonenumber"
                     >
-                        {'+38 (050) 347 42 76'}
+                        {'+38 050 347 42 76'}
                     </Link>
-
                     <Link
                         className={styles.footer_link}
-                        href={'tel:+38 (050) 762 77 40'}
+                        href={'tel:+38 050 762 77 40'}
                         id="phonenumber"
                     >
-                        {'+38 (050) 762 77 40'}
+                        {'+38 050 762 77 40'}
+                    </Link>
+                    <Link
+                        className={styles.footer_link}
+                        href={'tel:+49 151 21 260 753'}
+                        id="phonenumber"
+                    >
+                        {'+49 151 2126 07 53'}
                     </Link>
                 </div>
 
