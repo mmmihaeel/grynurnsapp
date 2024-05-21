@@ -17,7 +17,7 @@ const ManufacturingSection: FC = () => {
 
     const steps = [
         {
-            url: '/manufacturing/1-step.webp',
+            url: '/manufacturing/11-step.webp',
             description: t('1-step'),
         },
         {
