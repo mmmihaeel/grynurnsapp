@@ -44,22 +44,22 @@ const Gallery: FC<Props> = ({ products }) => {
                             product: products.find(
                                 (product) => product.id === 'Heart-of-Memories'
                             ) as Product,
-                            imageOrder: 0,
                             textOrder: 1,
+                            imageOrder: 0,
                         },
                         {
                             product: products.find(
                                 (product) => product.id === 'Eternal-Rest-(Red)'
                             ) as Product,
+                            textOrder: -1,
                             imageOrder: 1,
-                            textOrder: 0,
                         },
                         {
                             product: products.find(
                                 (product) => product.id === 'Embrace-of-Eternity-(Red)'
                             ) as Product,
-                            imageOrder: 1,
-                            textOrder: 0,
+                            textOrder: -1,
+                            imageOrder: 4,
                         },
                     ]}
                 />
@@ -89,22 +89,22 @@ const Gallery: FC<Props> = ({ products }) => {
                             product: products.find(
                                 (product) => product.id === 'Eternal-Rest-(Blue)'
                             ) as Product,
-                            imageOrder: 0,
                             textOrder: 1,
+                            imageOrder: 0,
                         },
                         {
                             product: products.find(
                                 (product) => product.id === 'Blue-Harmony'
                             ) as Product,
-                            imageOrder: 0,
-                            textOrder: 1,
+                            textOrder: -1,
+                            imageOrder: 1,
                         },
                         {
                             product: products.find(
                                 (product) => product.id === 'Talisman-of-the-Heart'
                             ) as Product,
-                            imageOrder: 0,
-                            textOrder: 1,
+                            textOrder: -1,
+                            imageOrder: 4,
                         },
                     ]}
                 />
@@ -133,22 +133,22 @@ const Gallery: FC<Props> = ({ products }) => {
                             product: products.find(
                                 (product) => product.id === 'Gray-Elegant'
                             ) as Product,
-                            imageOrder: 0,
                             textOrder: 1,
+                            imageOrder: 0,
                         },
                         {
                             product: products.find(
                                 (product) => product.id === 'Mysterious-Glare'
                             ) as Product,
+                            textOrder: -1,
                             imageOrder: 1,
-                            textOrder: 0,
                         },
                         {
                             product: products.find(
                                 (product) => product.id === 'Peace-of-mind'
                             ) as Product,
-                            imageOrder: 0,
-                            textOrder: 1,
+                            textOrder: -1,
+                            imageOrder: 4,
                         },
                     ]}
                 />

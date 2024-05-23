@@ -65,6 +65,7 @@
             "h2-title": "Choisissez une urne qui reflète<br/> <strong>votre amour</strong>"
         },
         "gallery": {
+            "sizes": "dimensions",
             "h1-title": "NOS OEUVRES",
             "advantages": {
                 "1": "Nous proposons également le service de confection d'urne <b>individuelle</b> sur commande. Nos artisans sont prêts à travailler avec vous pour créer une urne souvenir.",

@@ -79,16 +79,16 @@ const CardImage: FC<Props> = ({ product }) => {
                 <motion.p
                     initial={{
                         transform: 'translate(-50%, -50%)',
-                        bottom: '5px',
-                        right: '0px'
+                        bottom: '2%',
+                        right: currentLocale === 'en-GB' ? '10px' : '0px'
                     }}
                     animate={showSizes
                         ? {
-                            bottom: '235px',
-                            right: '0px'
+                            bottom: '40%',
+                            right: currentLocale === 'en-GB' ? '10px' : '0px'
                         } : {
-                            bottom: '5px',
-                            right: '-0px'
+                            bottom: '2%',
+                            right: currentLocale === 'en-GB' ? '10px' : '0px'
                         }}
                     className={styles.composition_product_image_sizes}
                 >

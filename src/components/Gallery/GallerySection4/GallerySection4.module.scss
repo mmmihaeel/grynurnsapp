@@ -111,10 +111,12 @@
         }
 
         &_image {
+            cursor: pointer;
             order: 0;
             width: 100%;
             height: 551px;
             position: relative;
+            overflow: hidden;
 
             &_tooltip {
                 display: flex;
@@ -130,11 +132,27 @@
                 left: 50%;
                 background: linear-gradient(180deg, rgba(127, 85, 57, 0.016) 0%, rgba(127, 85, 57, 0.8) 0%);
 
+                @media(max-width: 1200px) {
+                    padding-top: 15%;
+                }
+
+                @media(max-width: 800px) {
+                    padding-top: 10%;
+                }
+
                 &_size {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: flex-start;
+
+                    @media(max-width: 1200px) {
+                        width: 33%;
+                    }
+
+                    @media (max-width: 800px) {
+                        transform: scale(0.7);
+                    }
                 }
 
                 &_label {
@@ -174,10 +192,32 @@
                 line-height: 20px;
                 margin-bottom: 0;
 
+                @media(max-width: 1200px) {
+                    font-size: 16px;
+                    line-height: 17px;
+                }
+
+                @media(max-width: 800px) {
+                    font-size: 13px;
+                    line-height: 14px;
+                }
+
                 &_arrow {
                     top: 12px;
                     position: absolute;
                     right: -35px;
+
+                    @media(max-width: 1200px) {
+                        scale: 0.7;
+                        top: 9px !important;
+                        right: -30px !important;
+                    }
+
+                    @media(max-width: 800px) {
+                        scale: 0.6;
+                        top: 7px !important;
+                        right: -25px !important;
+                    }
                 }
             }
 
@@ -185,25 +225,29 @@
                 height: 430px;
             }
 
-            @media(max-width: 800px) {
-                height: 320px;
+            @media(max-width: 1000px) {
+                height: 340px;
+            }
+
+            @media(max-width: 700px) {
+                height: 244px;
             }
 
             @media(max-width: 670px) {
-                width: 100%;
-                height: 364px;
+                height: 344px;
+                //height: 165px;
             }
 
             @media(max-width: 500px) {
-                height: 324px;
+                height: 310px;
             }
 
             @media(max-width: 450px) {
-                height: 254px;
+                height: 250px;
             }
 
             @media(max-width: 370px) {
-                height: 235px;
+                height: 240px;
             }
 
             img {
@@ -285,6 +329,109 @@
                 align-items: center;
                 justify-self: center;
                 overflow: hidden;
+
+                &_tooltip {
+                    display: flex;
+                    padding-top: 20%;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    z-index: 3;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    height: 50%;
+                    bottom: -75%;
+                    left: 50%;
+                    background: linear-gradient(180deg, rgba(127, 85, 57, 0.016) 0%, rgba(127, 85, 57, 0.8) 0%);
+
+                    @media(max-width: 1200px) {
+                        padding-top: 15%;
+                    }
+
+                    @media(max-width: 800px) {
+                        padding-top: 10%;
+                    }
+
+                    &_size {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-start;
+
+                        @media(max-width: 1200px) {
+                            width: 33%;
+                        }
+
+                        @media (max-width: 800px) {
+                            transform: scale(0.7);
+                        }
+                    }
+
+                    &_label {
+                        font-family: 'Mariupol';
+                        font-style: normal;
+                        color: $main-color;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 20px;
+                        margin-bottom: -15px;
+                    }
+
+                    &_image {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                &_sizes {
+                    z-index: 3;
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                    bottom: 5px;
+                    right: 0px;
+                    font-family: 'Mariupol';
+                    font-style: normal;
+                    color: $main-color;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-bottom: 0;
+
+                    @media(max-width: 1200px) {
+                        font-size: 16px;
+                        line-height: 17px;
+                    }
+
+                    @media(max-width: 800px) {
+                        font-size: 13px;
+                        line-height: 14px;
+                    }
+
+                    &_arrow {
+                        top: 12px;
+                        position: absolute;
+                        right: -35px;
+
+                        @media(max-width: 1200px) {
+                            scale: 0.7;
+                            top: 9px !important;
+                            right: -30px !important;
+                        }
+
+                        @media(max-width: 800px) {
+                            scale: 0.6;
+                            top: 7px !important;
+                            right: -25px !important;
+                        }
+                    }
+                }
 
                 @media(max-width: 1200px) {
                     height: 390px;

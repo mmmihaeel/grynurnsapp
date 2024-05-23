@@ -2,7 +2,6 @@
 
 import { Product } from '@/types/product.type';
 import { FC } from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from './Composition.module.scss';
 import { useLocale } from 'next-intl';
@@ -43,24 +42,6 @@ const Composition: FC<Props> = ({ products }) => {
                                 className={styles.composition_product}
                                 key={product?.product?.id}
                             >
-                                {/* <div
-                                    style={{ order: product.imageOrder }}
-                                    className={styles.composition_product_image}
-                                >
-                                    <Image
-                                        src={product?.product?.images?.[0]}
-                                        alt={product?.product?.title?.[currentLocale as 'uk-UA']}
-                                        fill
-                                    />
-                                    {product?.product?.sizes ? (
-                                        <React.Fragment>
-
-                                        </React.Fragment>
-                                    ) : (
-                                        <React.Fragment>
-                                        </React.Fragment>
-                                    )}
-                                </div> */}
                                 <CardImage product={product} />
                                 <div
                                     style={{ order: product.textOrder }}
@@ -81,7 +62,7 @@ const Composition: FC<Props> = ({ products }) => {
             {isMobile && (
                 <React.Fragment>
                     <div className={styles.composition_product_column}>
-                        <div
+                        {/* <div
                             style={{ order: 1 }}
                             className={styles.composition_product_image}
                         >
@@ -90,7 +71,8 @@ const Composition: FC<Props> = ({ products }) => {
                                 alt={product1?.product?.title?.[currentLocale as 'uk-UA']}
                                 fill
                             />
-                        </div>
+                        </div> */}
+                        <CardImage product={product1} />
                         <div
                             style={{ order: 2 }}
                             className={styles.composition_product_text}
@@ -102,7 +84,7 @@ const Composition: FC<Props> = ({ products }) => {
                                 {product2?.product?.description?.[currentLocale as 'uk-UA']}
                             </p>
                         </div>
-                        <div
+                        {/* <div
                             style={{ order: 3 }}
                             className={styles.composition_product_image}
                         >
@@ -111,7 +93,8 @@ const Composition: FC<Props> = ({ products }) => {
                                 alt={product3?.product?.title?.[currentLocale as 'uk-UA']}
                                 fill
                             />
-                        </div>
+                        </div> */}
+                        <CardImage product={product3} />
                     </div>
                     <div className={styles.composition_product_column}>
                         <div
@@ -125,7 +108,7 @@ const Composition: FC<Props> = ({ products }) => {
                                 {product1?.product?.description?.[currentLocale as 'uk-UA']}
                             </p>
                         </div>
-                        <div
+                        {/* <div
                             style={{ order: 2 }}
                             className={styles.composition_product_image}
                         >
@@ -134,7 +117,8 @@ const Composition: FC<Props> = ({ products }) => {
                                 alt={product2?.product?.title?.[currentLocale as 'uk-UA']}
                                 fill
                             />
-                        </div>
+                        </div> */}
+                        <CardImage product={product2} />
                         <div
                             style={{ order: 3, justifySelf: 'flex-end' }}
                             className={styles.composition_product_text}

@@ -47,7 +47,21 @@ const ExhibitionSection: FC = () => {
                 dangerouslySetInnerHTML={{ __html: t.raw('main.h2-title') }}
             />
             <Composition
-                products={products.map((p) => {
+                products={products.map((p, i) => {
+                    if (i == 2) {
+                        return {
+                            product: p,
+                            textOrder: -1,
+                            imageOrder: 4,
+                        };
+                    }
+                    if (i == 1) {
+                        return {
+                            product: p,
+                            textOrder: -1,
+                            imageOrder: 1,
+                        };
+                    }
                     return {
                         product: p,
                         textOrder: 1,

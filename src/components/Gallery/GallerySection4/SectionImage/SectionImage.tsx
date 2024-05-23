@@ -10,7 +10,7 @@ type Props = {
     product: Product;
 };
 
-const CardImage: FC<Props> = ({ product }) => {
+const SectionImage: FC<Props> = ({ product }) => {
     const currentLocale = useLocale();
     const [showSizes, setShowSizes] = useState<boolean>(false);
 
@@ -22,7 +22,7 @@ const CardImage: FC<Props> = ({ product }) => {
         <div
             onMouseEnter={toggleSizesShown}
             onMouseLeave={toggleSizesShown}
-            className={styles.gallery_section_4_product_image}
+            className={styles.gallery_section_4_block_images_image}
         >
             <Image
                 src={product?.images?.[0]}
@@ -46,16 +46,16 @@ const CardImage: FC<Props> = ({ product }) => {
                             bottom: '-75%',
                             left: '50%'
                         }}
-                    className={styles.gallery_section_4_product_image_tooltip}
+                    className={styles.gallery_section_4_block_images_image_tooltip}
                 >
                     {product?.sizes?.map((size) => {
                         return <div
-                            className={styles.gallery_section_4_product_image_tooltip_size}
+                            className={styles.gallery_section_4_block_images_image_tooltip_size}
                             key={Math.random() + size?.size}
                         >
-                            <p className={styles.gallery_section_4_product_image_tooltip_label}>{size?.size}</p>
+                            <p className={styles.gallery_section_4_block_images_image_tooltip_label}>{size?.size}</p>
                             <motion.div
-                                className={styles.gallery_section_4_product_image_tooltip_image}
+                                className={styles.gallery_section_4_block_images_image_tooltip_image}
                                 initial={{
                                     width: size?.width,
                                     height: size?.height,
@@ -85,11 +85,11 @@ const CardImage: FC<Props> = ({ product }) => {
                             bottom: '2%',
                             right: currentLocale === 'en-GB' ? '10px' : '0px'
                         }}
-                    className={styles.gallery_section_4_product_image_sizes}
+                    className={styles.gallery_section_4_block_images_image_sizes}
                 >
                     {t('sizes')}
                     <motion.svg
-                        className={styles.gallery_section_4_product_image_sizes_arrow}
+                        className={styles.gallery_section_4_block_images_image_sizes_arrow}
                         transition={{ duration: 0.2, velocity: 2 }}
                         animate={
                             showSizes
@@ -126,4 +126,4 @@ const CardImage: FC<Props> = ({ product }) => {
     );
 };
 
-export default CardImage;
+export default SectionImage;
