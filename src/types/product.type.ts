@@ -1,4 +1,4 @@
-export interface Product {
+export type Product = {
 	id: string;
 	title: {
 		'uk-UA': string;
@@ -15,4 +15,10 @@ export interface Product {
 		'fr-FR': string;
 	};
 	images: string[];
-}
+	sizes?: {
+		size: string;
+		width: number;
+		height: number;
+		image: string;
+	}[];
+};

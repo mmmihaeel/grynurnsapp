@@ -17,6 +17,26 @@
     },
     "images": [
       "/products/images/Heart-of-Memories.webp"
+    ],
+    "sizes": [
+      {
+        "size": "L",
+        "width": 106,
+        "height": 102,
+        "image": "/products/images/Heart-of-Memories.png"
+      },
+      {
+        "size": "M",
+        "width": 98,
+        "height": 81,
+        "image": "/products/images/Heart-of-Memories.png"
+      },
+      {
+        "size": "S",
+        "width": 84,
+        "height": 71,
+        "image": "/products/images/Heart-of-Memories.png"
+      }
     ]
   },
   {
@@ -37,6 +57,26 @@
     },
     "images": [
       "/products/images/Eternal-Rest-(Red).webp"
+    ],
+    "sizes": [
+      {
+        "size": "L",
+        "width": 111,
+        "height": 120,
+        "image": "/products/images/Eternal-Rest-(Red).png"
+      },
+      {
+        "size": "M",
+        "width": 92,
+        "height": 99,
+        "image": "/products/images/Eternal-Rest-(Red).png"
+      },
+      {
+        "size": "S",
+        "width": 72,
+        "height": 77,
+        "image": "/products/images/Eternal-Rest-(Red).png"
+      }
     ]
   },
   {
@@ -57,6 +97,26 @@
     },
     "images": [
       "/products/images/Embrace-of-Eternity-(Red).webp"
+    ],
+    "sizes": [
+      {
+        "size": "L",
+        "width": 92,
+        "height": 120,
+        "image": "/products/images/Embrace-of-Eternity-(Red).png"
+      },
+      {
+        "size": "M",
+        "width": 81,
+        "height": 111,
+        "image": "/products/images/Embrace-of-Eternity-(Red).png"
+      },
+      {
+        "size": "S",
+        "width": 64,
+        "height": 88,
+        "image": "/products/images/Embrace-of-Eternity-(Red).png"
+      }
     ]
   },
   {
@@ -99,6 +159,26 @@
     },
     "images": [
       "/products/images/Eternal-Rest-(Blue).webp"
+    ],
+    "sizes": [
+      {
+        "size": "L",
+        "width": 97,
+        "height": 129,
+        "image": "/products/images/Eternal-Rest-(Blue).png"
+      },
+      {
+        "size": "M",
+        "width": 84,
+        "height": 112,
+        "image": "/products/images/Eternal-Rest-(Blue).png"
+      },
+      {
+        "size": "S",
+        "width": 70,
+        "height": 94,
+        "image": "/products/images/Eternal-Rest-(Blue).png"
+      }
     ]
   },
   {
@@ -119,6 +199,26 @@
     },
     "images": [
       "/products/images/Blue-Harmony.webp"
+    ],
+    "sizes": [
+      {
+        "size": "L",
+        "width": 80,
+        "height": 121,
+        "image": "/products/images/Blue-Harmony.png"
+      },
+      {
+        "size": "M",
+        "width": 69,
+        "height": 104,
+        "image": "/products/images/Blue-Harmony.png"
+      },
+      {
+        "size": "S",
+        "width": 56,
+        "height": 84,
+        "image": "/products/images/Blue-Harmony.png"
+      }
     ]
   },
   {
@@ -139,6 +239,26 @@
     },
     "images": [
       "/products/images/Talisman-of-the-Heart.webp"
+    ],
+    "sizes": [
+      {
+        "size": "L",
+        "width": 95,
+        "height": 120,
+        "image": "/products/images/Talisman-of-the-Heart.png"
+      },
+      {
+        "size": "M",
+        "width": 80,
+        "height": 101,
+        "image": "/products/images/Talisman-of-the-Heart.png"
+      },
+      {
+        "size": "S",
+        "width": 67,
+        "height": 85,
+        "image": "/products/images/Talisman-of-the-Heart.png"
+      }
     ]
   },
   {
@@ -160,6 +280,26 @@
     "images": [
       "/products/images/The-Heart-of-Nature-1.webp",
       "/products/images/The-Heart-of-Nature-2.webp"
+    ],
+    "sizes": [
+      {
+        "size": "L",
+        "width": 98,
+        "height": 138,
+        "image": "/products/images/The-Heart-of-Nature.png"
+      },
+      {
+        "size": "M",
+        "width": 84,
+        "height": 118,
+        "image": "/products/images/The-Heart-of-Nature.png"
+      },
+      {
+        "size": "S",
+        "width": 67,
+        "height": 94,
+        "image": "/products/images/The-Heart-of-Nature.png"
+      }
     ]
   },
   {
@@ -180,6 +320,26 @@
     },
     "images": [
       "/products/images/Embrace-of-Eternity-(Green).webp"
+    ],
+    "sizes": [
+      {
+        "size": "L",
+        "width": 93,
+        "height": 142,
+        "image": "/products/images/Eternal-Rest-(Green).png"
+      },
+      {
+        "size": "M",
+        "width": 78,
+        "height": 119,
+        "image": "/products/images/Eternal-Rest-(Green).png"
+      },
+      {
+        "size": "S",
+        "width": 65,
+        "height": 99,
+        "image": "/products/images/Eternal-Rest-(Green).png"
+      }
     ]
   },
   {
@@ -200,6 +360,26 @@
     },
     "images": [
       "/products/images/Gray-Elegant.webp"
+    ],
+    "sizes": [
+      {
+        "size": "L",
+        "width": 125,
+        "height": 119,
+        "image": "/products/images/Gray-Elegant.png"
+      },
+      {
+        "size": "M",
+        "width": 102,
+        "height": 97,
+        "image": "/products/images/Gray-Elegant.png"
+      },
+      {
+        "size": "S",
+        "width": 84,
+        "height": 80,
+        "image": "/products/images/Gray-Elegant.png"
+      }
     ]
   },
   {
@@ -220,6 +400,26 @@
     },
     "images": [
       "/products/images/Mysterious-Glare.webp"
+    ],
+    "sizes": [
+      {
+        "size": "L",
+        "width": 79,
+        "height": 133,
+        "image": "/products/images/Mysterious-Glare.png"
+      },
+      {
+        "size": "M",
+        "width": 64,
+        "height": 107,
+        "image": "/products/images/Mysterious-Glare.png"
+      },
+      {
+        "size": "S",
+        "width": 53,
+        "height": 88,
+        "image": "/products/images/Mysterious-Glare.png"
+      }
     ]
   },
   {
@@ -240,6 +440,26 @@
     },
     "images": [
       "/products/images/Peace-of-mind.webp"
+    ],
+    "sizes": [
+      {
+        "size": "L",
+        "width": 83,
+        "height": 132,
+        "image": "/products/images/Peace-of-mind.png"
+      },
+      {
+        "size": "M",
+        "width": 70,
+        "height": 111,
+        "image": "/products/images/Peace-of-mind.png"
+      },
+      {
+        "size": "S",
+        "width": 56,
+        "height": 89,
+        "image": "/products/images/Peace-of-mind.png"
+      }
     ]
   },
   {

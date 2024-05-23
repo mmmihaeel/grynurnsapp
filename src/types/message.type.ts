@@ -1,6 +1,6 @@
-export interface MessageDto {
+export type MessageDto = {
 	name: string;
 	phoneNumber: string;
 	email: string;
 	message: string;
-}
+};

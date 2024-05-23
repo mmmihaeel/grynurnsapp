@@ -116,6 +116,71 @@
             height: 551px;
             position: relative;
 
+            &_tooltip {
+                display: flex;
+                padding-top: 20%;
+                justify-content: space-around;
+                align-items: flex-start;
+                z-index: 3;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 50%;
+                bottom: -75%;
+                left: 50%;
+                background: linear-gradient(180deg, rgba(127, 85, 57, 0.016) 0%, rgba(127, 85, 57, 0.8) 0%);
+
+                &_size {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+
+                &_label {
+                    font-family: 'Mariupol';
+                    font-style: normal;
+                    color: $main-color;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-bottom: -15px;
+                }
+
+                &_image {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            &_sizes {
+                z-index: 3;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                bottom: 5px;
+                right: 0px;
+                font-family: 'Mariupol';
+                font-style: normal;
+                color: $main-color;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 20px;
+                margin-bottom: 0;
+
+                &_arrow {
+                    top: 12px;
+                    position: absolute;
+                    right: -35px;
+                }
+            }
+
             @media(max-width: 1200px) {
                 height: 430px;
             }
