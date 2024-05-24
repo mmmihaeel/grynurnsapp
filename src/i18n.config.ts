@@ -21,6 +21,44 @@ export const pathnames = {
 
 export const localePrefix = 'never';
 
+export const domains = [
+	{
+		domain: String(process.env.VERCEL_URL),
+		defaultLocale: 'en-GB' as Locale,
+		locales: ['en-GB', 'de-DE', 'fr-FR', 'pl-PL', 'uk-UA'] as Locale[],
+	},
+	{
+		domain: String(process.env.COM_DOMAIN),
+		defaultLocale: 'en-GB' as Locale,
+		locales: ['en-GB', 'de-DE', 'fr-FR', 'pl-PL', 'uk-UA'] as Locale[],
+	},
+	{
+		domain: String(process.env.FR_DOMAIN),
+		defaultLocale: 'fr-FR' as Locale,
+		locales: ['fr-FR'] as Locale[],
+	},
+	{
+		domain: String(process.env.PL_DOMAIN),
+		defaultLocale: 'pl-PL' as Locale,
+		locales: ['pl-PL'] as Locale[],
+	},
+	{
+		domain: String(process.env.DE_DOMAIN),
+		defaultLocale: 'de-DE' as Locale,
+		locales: ['de-DE'] as Locale[],
+	},
+	{
+		domain: String(process.env.EN_DOMAIN),
+		defaultLocale: 'en-GB' as Locale,
+		locales: ['en-GB'] as Locale[],
+	},
+	{
+		domain: String(process.env.UK_DOMAIN),
+		defaultLocale: 'uk-UA' as Locale,
+		locales: ['uk-UA'] as Locale[],
+	},
+];
+
 export const matcher = `/(${locales.join('|')})/:path*`;
 
 export type AppPathnames = keyof typeof pathnames;
