@@ -46,10 +46,10 @@ export default createMiddleware({
 	],
 });
 
-// export const config = {
-// 	matcher: [
-// 		'/',
-// 		`/(en-GB|de-DE|fr-FR|pl-PL|uk-UA)/:path*`,
-// 		'/((?!_next|_vercel|.*\\..*).*)',
-// 	],
-// };
+export const config = {
+	matcher: [
+		'/',
+		`/(en-GB|de-DE|fr-FR|pl-PL|uk-UA)/:path*`,
+		'/((?!_next|_vercel|.*\\..*).*)',
+	],
+};
