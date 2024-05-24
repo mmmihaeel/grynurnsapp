@@ -19,7 +19,7 @@ export const pathnames = {
 	},
 } satisfies Pathnames<typeof locales>;
 
-export const localePrefix = 'as-needed';
+export const localePrefix = 'never';
 
 export const matcher = `/(${locales.join('|')})/:path*`;
 
