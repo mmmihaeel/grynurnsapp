@@ -5,7 +5,7 @@ import { redirect } from 'next/navigation';
 import { headers } from 'next/headers';
 import { domains } from '@/i18n.config';
 
-export default function RootPage() {
+export default async function RootPage() {
     const headersList = headers();
     const domain = headersList.get('host');
     console.log(domain);
