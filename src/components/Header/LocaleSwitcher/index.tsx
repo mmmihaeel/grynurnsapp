@@ -41,6 +41,7 @@ const LocaleSwitcher: FC = () => {
                     { locale: nextLocale }
                 );
             });
+
         },
         [params, pathname, router]
     );

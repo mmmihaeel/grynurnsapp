@@ -19,7 +19,7 @@ export const pathnames = {
 	},
 } satisfies Pathnames<typeof locales>;
 
-export const localePrefix = 'never';
+export const localePrefix = 'always';
 
 export const domains = [
 	{
