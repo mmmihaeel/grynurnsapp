@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import { useMediaQuery } from 'react-responsive';
+import { AngleciaProDisplay } from '@/app/fonts';
 
 type Props = {
     product: Product;
@@ -43,7 +44,9 @@ const GallerySection2: FC<Props> = ({ product }) => {
                                     transition={{ duration: 1 }}
                                     className={styles.gallery_section_2_block_text}
                                 >
-                                    <h3 className={styles.gallery_section_2_block_text_title}>
+                                    <h3
+                                        className={`${styles.gallery_section_2_block_text_title} ${AngleciaProDisplay.className}`}
+                                    >
                                         {String(product?.title?.[currentLocale as 'en-GB'])}
                                     </h3>
                                     <p className={styles.gallery_section_2_block_text_descr}>
@@ -129,7 +132,9 @@ const GallerySection2: FC<Props> = ({ product }) => {
                                 transition={{ duration: 1 }}
                                 className={styles.gallery_section_2_block_text}
                             >
-                                <h3 className={styles.gallery_section_2_block_text_title}>
+                                <h3
+                                    className={`${styles.gallery_section_2_block_text_title} ${AngleciaProDisplay.className}`}
+                                >
                                     {String(product?.title?.[currentLocale as 'en-GB'])}
                                 </h3>
                                 <p className={styles.gallery_section_2_block_text_descr}>

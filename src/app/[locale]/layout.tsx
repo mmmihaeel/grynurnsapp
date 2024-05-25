@@ -2,6 +2,8 @@
 import { locales } from '@/i18n.config';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
+import { Mariupol } from '../fonts';
+
 
 export async function generateStaticParams() {
     return locales.map((locale) => ({ locale }));
@@ -18,7 +20,7 @@ const MainLayout = async ({
     unstable_setRequestLocale(locale);
 
     return (
-        <html lang={locale}>
+        <html lang={locale} className={Mariupol.className}>
             <head>
                 <base href="/" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -9,6 +9,7 @@ import Image from 'next/image';
 import CardImage from './CardImage/CardImage';
 import { Product } from '@/types/product.type';
 import SectionImage from './SectionImage/SectionImage';
+import { AngleciaProDisplay } from '@/app/fonts';
 
 const GallerySection4: FC = () => {
     const products = useProductsContext();
@@ -41,9 +42,17 @@ const GallerySection4: FC = () => {
                                         fill
                                     />
                                 </div> */}
-                                <CardImage product={products?.find((p) => p.id === 'The-Heart-of-Nature') as Product} />
+                                <CardImage
+                                    product={
+                                        products?.find(
+                                            (p) => p.id === 'The-Heart-of-Nature'
+                                        ) as Product
+                                    }
+                                />
                                 <div className={styles.gallery_section_4_product_text}>
-                                    <h3 className={styles.gallery_section_4_product_text_title}>
+                                    <h3
+                                        className={`${styles.gallery_section_4_product_text_title} ${AngleciaProDisplay.className}`}
+                                    >
                                         {
                                             products?.find((p) => p.id === 'The-Heart-of-Nature')
                                                 ?.title?.[currentLocale as 'uk-UA']
@@ -78,9 +87,17 @@ const GallerySection4: FC = () => {
                                         fill
                                     />
                                 </div> */}
-                                <CardImage product={products?.find((p) => p.id === 'Eternal-Rest-(Green)') as Product} />
+                                <CardImage
+                                    product={
+                                        products?.find(
+                                            (p) => p.id === 'Eternal-Rest-(Green)'
+                                        ) as Product
+                                    }
+                                />
                                 <div className={styles.gallery_section_4_product_text}>
-                                    <h3 className={styles.gallery_section_4_product_text_title}>
+                                    <h3
+                                        className={`${styles.gallery_section_4_product_text_title} ${AngleciaProDisplay.className}`}
+                                    >
                                         {
                                             products?.find((p) => p.id === 'Eternal-Rest-(Green)')
                                                 ?.title?.[currentLocale as 'uk-UA']
@@ -135,7 +152,9 @@ const GallerySection4: FC = () => {
                                 transition={{ duration: 1 }}
                                 className={styles.gallery_section_4_block_text}
                             >
-                                <h3 className={styles.gallery_section_4_block_text_title}>
+                                <h3
+                                    className={`${styles.gallery_section_4_product_text_title} ${AngleciaProDisplay.className}`}
+                                >
                                     {String(
                                         products?.find((p) => p.id === 'Vault-of-Memories')
                                             ?.title?.[currentLocale as 'en-GB']
@@ -163,7 +182,9 @@ const GallerySection4: FC = () => {
                                 }
                             />
                             <div className={styles.gallery_section_4_product_text}>
-                                <h3 className={styles.gallery_section_4_product_text_title}>
+                                <h3
+                                    className={`${styles.gallery_section_4_product_text_title} ${AngleciaProDisplay.className}`}
+                                >
                                     {
                                         products?.find((p) => p.id === 'Eternal-Rest-(Green)')
                                             ?.title?.[currentLocale as 'uk-UA']

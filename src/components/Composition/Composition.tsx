@@ -8,6 +8,7 @@ import { useLocale } from 'next-intl';
 import { useMediaQuery } from 'react-responsive';
 import React from 'react';
 import CardImage from './CardImage/CardImage';
+import { AngleciaProDisplay } from '@/app/fonts';
 
 type Props = {
     products: {
@@ -47,7 +48,9 @@ const Composition: FC<Props> = ({ products }) => {
                                     style={{ order: product.textOrder }}
                                     className={styles.composition_product_text}
                                 >
-                                    <h3 className={styles.composition_product_text_title}>
+                                    <h3
+                                        className={`${styles.composition_product_text_title} ${AngleciaProDisplay.className}`}
+                                    >
                                         {product?.product?.title?.[currentLocale as 'uk-UA']}
                                     </h3>
                                     <p className={styles.composition_product_text_descr}>

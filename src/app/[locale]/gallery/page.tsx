@@ -1,6 +1,6 @@
 import getProducts from '@/actions/get-products';
 import Gallery from '@/components/Gallery';
-import { Metadata } from 'next';
+import { Metadata, Viewport } from 'next';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 type MetadataProps = {
@@ -16,13 +16,11 @@ export async function generateMetadata({
         namespace: 'translations.Metadata',
     });
     return {
-        colorScheme: 'light dark',
         title: t('gallery.title'),
         description: t('gallery.description'),
         applicationName: 'grynurnsapp',
         keywords: t('gallery.keywords'),
         referrer: 'strict-origin-when-cross-origin',
-        themeColor: '#EDE0D4',
         creator: 'grynurns@gmail.com',
         publisher: 'grynurns@gmail.com',
         robots: 'index, follow',
@@ -56,6 +54,13 @@ export async function generateMetadata({
         alternates: {
             canonical: 'https://grynurns.com/gallery',
         },
+    };
+}
+
+export async function generateViewport(): Promise<Viewport> {
+    return {
+        colorScheme: 'light dark',
+        themeColor: '#EDE0D4',
     };
 }
 

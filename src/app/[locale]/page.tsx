@@ -1,7 +1,7 @@
 'use server';
 import getProducts from '@/actions/get-products';
 import Main from '@/components/Main';
-import { Metadata } from 'next';
+import { Metadata, Viewport } from 'next';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 type MetadataProps = {
@@ -17,13 +17,11 @@ export async function generateMetadata({
         namespace: 'translations.Metadata',
     });
     return {
-        colorScheme: 'light dark',
         title: t('main.title'),
         description: t('main.description'),
         applicationName: 'grynurnsapp',
         keywords: t('main.keywords'),
         referrer: 'strict-origin-when-cross-origin',
-        themeColor: '#EDE0D4',
         creator: 'grynurns@gmail.com',
         publisher: 'grynurns@gmail.com',
         robots: 'index, follow',
@@ -57,6 +55,13 @@ export async function generateMetadata({
         alternates: {
             canonical: 'https://grynurns.com',
         },
+    };
+}
+
+export async function generateViewport(): Promise<Viewport> {
+    return {
+        colorScheme: 'light dark',
+        themeColor: '#EDE0D4',
     };
 }
 

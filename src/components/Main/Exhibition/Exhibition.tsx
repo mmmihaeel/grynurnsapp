@@ -8,6 +8,7 @@ import { useProductsContext } from '@/context/products.context';
 import { useRouter } from 'next/navigation';
 import { Product } from '@/types/product.type';
 import dynamic from 'next/dynamic';
+import { AngleciaProDisplay } from '@/app/fonts';
 const Composition = dynamic(() => import('@/components/Composition/Composition'), { ssr: false });
 
 const ExhibitionSection: FC = () => {
@@ -43,7 +44,7 @@ const ExhibitionSection: FC = () => {
                 initial={{ opacity: 0, translateY: '-80px' }}
                 whileInView={{ opacity: 1, scale: 1, translateY: '0px' }}
                 transition={{ duration: 1 }}
-                className={styles.exhibition_section_title}
+                className={`${styles.exhibition_section_title} ${AngleciaProDisplay.className}`}
                 dangerouslySetInnerHTML={{ __html: t.raw('main.h2-title') }}
             />
             <Composition

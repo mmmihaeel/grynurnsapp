@@ -11,6 +11,7 @@ import { useTranslations } from 'next-intl';
 import sendEmail from '@/actions/send-email';
 import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { AngleciaProDisplay } from '@/app/fonts';
 
 const show = {
     opacity: 1,
@@ -122,7 +123,11 @@ const OrderModal: FC = () => {
                             onClick={toggleModalShown}
                         />
 
-                        <h2 className={styles.orderModal_modal_title}>{t('title')}</h2>
+                        <h2
+                            className={`${styles.orderModal_modal_title} ${AngleciaProDisplay.className}`}
+                        >
+                            {t('title')}
+                        </h2>
                         <FormProvider {...messageForm}>
                             <form
                                 onSubmit={messageForm.handleSubmit(onSubmit)}
@@ -215,7 +220,8 @@ const OrderModal: FC = () => {
                                         />
                                     </div>
                                     <span className={styles.orderModal_modal_field_error}>
-                                        {messageForm?.formState?.errors?.message?.message && t(messageForm?.formState?.errors?.message?.message)}
+                                        {messageForm?.formState?.errors?.message?.message &&
+                                            t(messageForm?.formState?.errors?.message?.message)}
                                     </span>
                                 </div>
                                 <button
@@ -228,7 +234,9 @@ const OrderModal: FC = () => {
                                 </button>
                             </form>
                         </FormProvider>
-                        {success && <div className={styles.orderModal_success}>{t(success)}</div>}
+                        {success && (
+                            <div className={styles.orderModal_success}>{t(success)}</div>
+                        )}
                         {error && <div className={styles.orderModal_error}>{t(error)}</div>}
                     </motion.div>
                 </>
