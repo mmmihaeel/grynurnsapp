@@ -25,6 +25,12 @@ const ExhibitionSection: FC = () => {
         useProductsContext().find(
             (product) => product.id === 'Embrace-of-Eternity-(Red)'
         ) as Product,
+        useProductsContext().find(
+            (product) => product.id === 'Earth-Harmony'
+        ) as Product,
+        useProductsContext().find(
+            (product) => product.id === 'Serenity-Stone'
+        ) as Product,
     ];
 
     const handleButtonCLick = useCallback(() => {
@@ -49,6 +55,13 @@ const ExhibitionSection: FC = () => {
             />
             <Composition
                 products={products.map((p, i) => {
+                    if (i == 4) {
+                        return {
+                            product: p,
+                            textOrder: -1,
+                            imageOrder: 1,
+                        };
+                    }
                     if (i == 2) {
                         return {
                             product: p,

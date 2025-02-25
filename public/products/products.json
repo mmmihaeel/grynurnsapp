@@ -484,5 +484,105 @@
       "/products/images/Red-elegance-1.webp",
       "/products/images/Red-elegance-2.webp"
     ]
+  },
+  {
+    "id": "Earth-Harmony",
+    "title": {
+      "en-GB": "Earth Harmony Urn",
+      "uk-UA": "Урна «Земна Гармонія»",
+      "de-DE": "Erde-Harmonie-Urne",
+      "fr-FR": "Urne Harmonie Terrestr",
+      "pl-PL": "Urna „Harmonia Ziemi”"
+    },
+    "description": {
+      "en-GB": "The Earth Harmony Urn is a beautifully crafted ceramic memorial, inspired by the warm, grounding tones of natural earth. Its smooth, rounded shape reflects a sense of balance and tranquility, symbolizing the eternal connection between life and nature. The urn's durable ceramic material and carefully fitted lid ensure safe and secure storage of ashes. This urn comes in two sizes: a larger version for a final resting place and a smaller keepsake urn for sharing a portion of the ashes with loved ones.",
+      "uk-UA": "Урна «Земна Гармонія» — це вишукана пам'ятна річ, виготовлена з кераміки та натхнена теплими, заспокійливими відтінками землі. Її плавна, округла форма символізує гармонію та спокій, втілюючи вічний зв’язок між життям і природою. Завдяки міцному матеріалу та щільно прилеглій кришці, урна надійно зберігає прах. Доступна у двох розмірах: більша урна для основного місця спочинку та менша — як пам’ятна реліквія для близьких.",
+      "de-DE": "Die Erde-Harmonie-Urne ist eine kunstvoll gefertigte Keramikurne, inspiriert von den warmen, erdigen Farbtönen der Natur. Ihre sanft abgerundete Form vermittelt ein Gefühl von Ausgeglichenheit und Frieden und symbolisiert die ewige Verbindung zwischen Leben und Natur. Das widerstandsfähige Keramikmaterial und der passgenaue Deckel gewährleisten eine sichere Aufbewahrung der Asche. Diese Urne ist in zwei Größen erhältlich: eine größere Urne als letzte Ruhestätte und eine kleinere Erinnerungsurne für Angehörige.",
+      "fr-FR": "L’urne Harmonie Terrestre est un hommage raffiné en céramique, inspiré des tons chaleureux et apaisants de la terre. Sa forme arrondie et douce évoque l’équilibre et la sérénité, symbolisant le lien éternel entre la vie et la nature. Fabriquée en céramique résistante, avec un couvercle ajusté, elle garantit une conservation sûre des cendres. Disponible en deux tailles : une grande urne pour le lieu de repos principal et une petite urne souvenir pour partager un souvenir précieux avec vos proches.",
+      "pl-PL": "Urna „Harmonia Ziemi” to starannie wykonana pamiątka z ceramiki, inspirowana ciepłymi, ziemistymi tonami natury. Jej gładki, zaokrąglony kształt symbolizuje równowagę i spokój, podkreślając wieczne połączenie życia z naturą. Solidny materiał ceramiczny i dokładnie dopasowana pokrywka zapewniają bezpieczne przechowywanie prochów. Urna dostępna jest w dwóch rozmiarach: większa jako główne miejsce spoczynku i mniejsza urna na pamiątkę dla bliskich."
+    },
+    "images": [
+      "/products/images/Earth-Harmony.webp"
+    ]
+  },
+  {
+    "id": "Celestial-Peace",
+    "title": {
+      "en-GB": "Celestial Peace – Blue Granite Urn",
+      "uk-UA": "Зоряний Спокій – Синя Гранітна Урна",
+      "de-DE": "Himmlische Ruhe – Blaue Graniturne",
+      "fr-FR": "Paix Céleste – Urne en Granit Bleu",
+      "pl-PL": "Niebiański Spokój – Niebieska Granitowa Urna"
+    },
+    "description": {
+      "en-GB": " This elegant cremation urn is crafted from high-quality material that mimics blue granite. Its classic shape and deep blue hue symbolize peace and eternal remembrance. The smaller urn can serve as a keepsake urn, allowing loved ones to share a portion of the ashes.",
+      "uk-UA": "Ця елегантна кремаційна урна виготовлена з високоякісного матеріалу, що імітує синій граніт. Завдяки своїй класичній формі та глибокому синьому відтінку, вона символізує спокій і вічний спомин. Менша урна може використовуватися як пам’ятна міні-урна для розділення праху серед родичів.",
+      "de-DE": " Diese elegante Kremationsurne besteht aus hochwertigem Material, das blauen Granit nachahmt. Ihre klassische Form und die tiefe blaue Farbe symbolisieren Frieden und ewiges Gedenken. Die kleinere Urne kann als Erinnerungsurne dienen, um die Asche unter Angehörigen aufzuteilen.",
+      "fr-FR": "Cette élégante urne funéraire est fabriquée à partir d'un matériau de haute qualité imitant le granit bleu. Sa forme classique et sa teinte bleu profond symbolisent la paix et le souvenir éternel. La plus petite urne peut être utilisée comme urne souvenir pour partager une partie des cendres avec les proches.",
+      "pl-PL": "Ta elegancka urna kremacyjna została wykonana z wysokiej jakości materiału, który imituje niebieski granit. Klasyczny kształt i głęboki odcień niebieskiego symbolizują spokój i wieczną pamięć. Mniejsza urna może pełnić funkcję urny pamiątkowej, umożliwiając podział prochów między bliskich"
+    },
+    "images": [
+      "/products/images/Celestial-Peace.webp"
+    ]
+  },
+  {
+    "id": "Serenity-Stone",
+    "title": {
+      "en-GB": "Serenity Stone Urn",
+      "uk-UA": "Урна «Камінь Спокою»",
+      "de-DE": "Steinurne „Serenitas“",
+      "fr-FR": "Urne Harmonie Terrestre",
+      "pl-PL": "Urna „Harmonia Ziemi”"
+    },
+    "description": {
+      "en-GB": "The Serenity Stone Urn is an elegant and timeless memorial crafted from high-quality ceramic with a smooth, speckled finish reminiscent of natural stone. Its rounded silhouette represents the cycle of life and eternal peace. Designed to hold ashes securely, it features a perfectly fitted lid for added protection. This urn is available in two sizes: a larger version for a primary resting place and a smaller keepsake urn for sharing a cherished memory with loved ones.",
+      "uk-UA": "Урна «Камінь Спокою» — це витончена та позачасова пам’ятна річ, виготовлена з високоякісної кераміки зі спокійною крапчастою текстурою, що нагадує природний камінь. Її округла форма символізує цикл життя та вічний спокій. Урна надійно зберігає прах і має щільно прилеглу кришку для додаткового захисту. Доступна у двох розмірах: більша урна для основного зберігання та менша для пам’ятного сувеніра.",
+      "de-DE": "Die Steinurne „Serenitas“ ist ein elegantes und zeitloses Erinnerungsstück, gefertigt aus hochwertiger Keramik mit einer glatten, gesprenkelten Oberfläche, die an natürlichen Stein erinnert. Ihre abgerundete Form symbolisiert den Lebenszyklus und ewige Ruhe. Die Urne bewahrt die Asche sicher auf und verfügt über einen passgenauen Deckel für zusätzlichen Schutz. Erhältlich in zwei Größen: eine größere Urne als Hauptaufbewahrungsort und eine kleinere Erinnerungsurne zur gemeinsamen Erinnerung mit Angehörigen.",
+      "fr-FR": "L’urne Pierre Sérénité est un hommage élégant et intemporel, fabriqué en céramique de haute qualité avec une finition lisse et mouchetée évoquant la pierre naturelle. Sa silhouette arrondie symbolise le cycle de la vie et la paix éternelle. Conçue pour conserver les cendres en toute sécurité, elle dispose d’un couvercle ajusté pour une protection optimale. Disponible en deux tailles : une grande urne pour un lieu de repos principal et une petite urne souvenir pour partager un précieux souvenir avec vos proches.",
+      "pl-PL": "Kamienna Urna Spokoju to elegancka i ponadczasowa pamiątka wykonana z wysokiej jakości ceramiki o gładkim, nakrapianym wykończeniu, przypominającym naturalny kamień. Jej zaokrąglony kształt symbolizuje cykl życia i wieczny spokój. Urna zapewnia bezpieczne przechowywanie prochów dzięki idealnie dopasowanej pokrywce. Dostępna w dwóch rozmiarach: większa urna jako główne miejsce spoczynku i mniejsza urna na pamiątkę dla bliskich."
+    },
+    "images": [
+      "/products/images/Serenity-Stone.webp"
+    ]
+  },
+  {
+    "id": "Earthstone-Memory",
+    "title": {
+      "en-GB": "Earthstone Memory Urn",
+      "uk-UA": "Урна «Камінь Пам’яті»",
+      "de-DE": "Erinnerungsurne „Erdenstein“",
+      "fr-FR": "Urne Mémorielle en Pierre de Terre",
+      "pl-PL": "Kamienna Urna Pamięci"
+    },
+    "description": {
+      "en-GB": "The Earthstone Memory Urn is crafted with a unique textured surface resembling natural stone. Its smooth, rounded design symbolizes eternal rest and peaceful remembrance. Made from durable, high-quality ceramic, this urn is designed to hold the ashes securely while blending seamlessly into any serene environment. Available in two sizes, it offers a timeless tribute to your loved one.",
+      "uk-UA": "Урна «Камінь Пам’яті» виготовлена з міцної кераміки з унікальною текстурою, що імітує природний камінь. Її гладка, округла форма символізує вічний спокій і пам’ять. Урна забезпечує надійне зберігання праху та гармонійно вписується в будь-який спокійний простір. Доступна у двох розмірах, вона є гідною даниною пам’яті вашим близьким.",
+      "de-DE": "Die Erinnerungsurne „Erdenstein“ besteht aus hochwertiger Keramik mit einer Textur, die an natürlichen Stein erinnert. Ihr weiches, abgerundetes Design symbolisiert ewige Ruhe und liebevolles Gedenken. Diese robuste Urne bewahrt die Asche sicher auf und fügt sich harmonisch in jede ruhige Umgebung ein. In zwei Größen erhältlich, bietet sie einen zeitlosen Tribut an Ihre Liebsten.",
+      "fr-FR": "L’urne mémorielle en Pierre de Terre est fabriquée en céramique de haute qualité avec une texture évoquant la pierre naturelle. Son design arrondi et épuré symbolise le repos éternel et le souvenir paisible. Cette urne robuste garantit la conservation sécurisée des cendres et s’intègre harmonieusement dans tout environnement calme. Disponible en deux tailles, elle constitue un hommage intemporel à vos proches.",
+      "pl-PL": "Kamienna Urna Pamięci to starannie wykonana urna z ceramiki o teksturze przypominającej naturalny kamień. Jej zaokrąglony kształt symbolizuje wieczny odpoczynek i spokojne wspomnienie. Trwała i wysokiej jakości, zapewnia bezpieczne przechowywanie prochów, harmonizując z otoczeniem. Dostępna w dwóch rozmiarach, stanowi ponadczasowy hołd dla ukochanych osób."
+    },
+    "images": [
+      "/products/images/Earthstone-Memory.webp"
+    ]
+  },
+  {
+    "id": "Golden-Remembrance",
+    "title": {
+      "en-GB": "Golden Remembrance – Ceramic Urn",
+      "uk-UA": "Сонячна Пам’ять – Керамічна Урна",
+      "de-DE": "Goldene Erinnerung – Keramikurne",
+      "fr-FR": "Souvenir Doré – Urne en Céramique",
+      "pl-PL": "Złote Wspomnienie – Ceramiczna Urna"
+    },
+    "description": {
+      "en-GB": "This cremation urn is crafted from high-quality ceramic in warm yellow-beige tones with natural speckled details. Its smooth, rounded design symbolizes peace, warmth, and eternal memory of a loved one. The smaller urn serves as a keepsake urn, allowing family members to share a portion of the ashes.",
+      "uk-UA": "Ця кремаційна урна виготовлена з високоякісної кераміки у теплих жовто-бежевих тонах із природними вкрапленнями. Її м’який, заокруглений дизайн символізує спокій, світло і вічне тепло пам’яті про близьку людину. Менша урна може використовуватися як пам’ятна міні-урна для поділу праху між рідними.",
+      "de-DE": "Diese Kremationsurne besteht aus hochwertiger Keramik in warmen Gelb-Beige-Tönen mit natürlichen Sprenkeln. Ihr sanftes, abgerundetes Design symbolisiert Frieden, Wärme und die ewige Erinnerung an einen geliebten Menschen. Die kleinere Urne kann als Erinnerungsurne verwendet werden, um die Asche unter den Angehörigen aufzuteilen.",
+      "fr-FR": "Cette urne funéraire est fabriquée en céramique de haute qualité avec des tons chauds jaune-beige et des détails mouchetés naturels. Son design doux et arrondi symbolise la paix, la chaleur et le souvenir éternel d’un être cher. La plus petite urne peut être utilisée comme urne souvenir pour partager une partie des cendres avec la famille.",
+      "pl-PL": "Ta urna kremacyjna wykonana jest z wysokiej jakości ceramiki w ciepłych żółto-beżowych tonach z naturalnymi plamkami. Jej łagodny, zaokrąglony kształt symbolizuje spokój, światło i wieczne ciepło wspomnień o bliskiej osobie. Mniejsza urna może służyć jako urna pamiątkowa do podziału prochów między rodziną."
+    },
+    "images": [
+      "/products/images/Golden-Remembrance.webp"
+    ]
   }
 ]

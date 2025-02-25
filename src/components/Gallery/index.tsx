@@ -70,6 +70,40 @@ const Gallery: FC<Props> = ({ products }) => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
+                id="gallery-section-1"
+                className={styles.gallery}
+            >
+                <Composition
+                    products={[
+                        {
+                            product: products.find(
+                                (product) => product.id === 'Celestial-Peace'
+                            ) as Product,
+                            textOrder: 1,
+                            imageOrder: 0,
+                        },
+                        {
+                            product: products.find(
+                                (product) => product.id === 'Golden-Remembrance'
+                            ) as Product,
+                            textOrder: -1,
+                            imageOrder: 1,
+                        },
+                        {
+                            product: products.find(
+                                (product) => product.id === 'Earthstone-Memory'
+                            ) as Product,
+                            textOrder: -1,
+                            imageOrder: 4,
+                        },
+                    ]}
+                />
+            </motion.section>
+            <motion.section
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
                 id="gallery-section-2"
                 className={styles.gallery}
             >

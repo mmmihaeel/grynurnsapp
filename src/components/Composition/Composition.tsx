@@ -25,6 +25,8 @@ const Composition: FC<Props> = ({ products }) => {
 
     const [product1, product2, product3] = products;
 
+    console.log(products);
+
     return (
         <motion.div
             className={styles.composition}
