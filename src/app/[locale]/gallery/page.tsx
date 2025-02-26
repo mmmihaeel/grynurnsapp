@@ -1,7 +1,7 @@
 import getProducts from '@/actions/get-products';
 import Gallery from '@/components/Gallery';
 import { Metadata, Viewport } from 'next';
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 type MetadataProps = {
     params: { locale: string };
@@ -69,7 +69,7 @@ type PageProps = {
 };
 
 const GalleryPage = async ({ params: { locale } }: PageProps) => {
-    unstable_setRequestLocale(locale);
+    setRequestLocale(locale);
     const products = await getProducts();
 
     return <Gallery products={products} />;
