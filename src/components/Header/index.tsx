@@ -7,7 +7,7 @@ import { useEffect, useRef } from 'react';
 import Logo from '../../assets/icons/logo.svg';
 import { useLocale, useTranslations } from 'next-intl';
 import LocaleSwitcher from './LocaleSwitcher';
-import { Link } from '@/navigation';
+import { Link } from '@/i18n/routing';
 import NextLink from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 import SmallLogo from '@/assets/icons/small-logo.svg';

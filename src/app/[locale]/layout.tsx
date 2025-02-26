@@ -1,8 +1,8 @@
 'use server';
-import { locales } from '@/i18n.config';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages, unstable_setRequestLocale } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { Mariupol } from '../fonts';
+import { locales } from '@/i18n/routing';
 
 
 export async function generateStaticParams() {
@@ -17,7 +17,7 @@ const MainLayout = async ({
     params: { locale: string };
 }) => {
     const messages = await getMessages();
-    unstable_setRequestLocale(locale);
+    setRequestLocale(locale);
 
     return (
         <html lang={locale} className={Mariupol.className}>

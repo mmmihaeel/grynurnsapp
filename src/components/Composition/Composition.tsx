@@ -23,9 +23,7 @@ const Composition: FC<Props> = ({ products }) => {
     const isDesktop = useMediaQuery({ minWidth: '671px' });
     const isMobile = useMediaQuery({ maxWidth: '670px' });
 
-    const [product1, product2, product3] = products;
-
-    console.log(products);
+    const [product1, product2, product3, product4] = products;
 
     return (
         <motion.div
@@ -82,10 +80,10 @@ const Composition: FC<Props> = ({ products }) => {
                             style={{ order: 2 }}
                             className={styles.composition_product_text}
                         >
-                            <h3 className={styles.composition_product_text_title}>
+                            <h3 className={styles.composition_product_text_title} style={{ textAlign: 'right' }}>
                                 {product2?.product?.title?.[currentLocale as 'uk-UA']}
                             </h3>
-                            <p className={styles.composition_product_text_descr}>
+                            <p className={styles.composition_product_text_descr} style={{ textAlign: 'right' }}>
                                 {product2?.product?.description?.[currentLocale as 'uk-UA']}
                             </p>
                         </div>
@@ -100,6 +98,19 @@ const Composition: FC<Props> = ({ products }) => {
                             />
                         </div> */}
                         <CardImage product={product3} />
+                        {product4 &&
+                            <div
+                                style={{ order: 5 }}
+                                className={styles.composition_product_text}
+                            >
+                                <h3 className={styles.composition_product_text_title} style={{ textAlign: 'right' }}>
+                                    {product4?.product?.title?.[currentLocale as 'uk-UA']}
+                                </h3>
+                                <p className={styles.composition_product_text_descr} style={{ textAlign: 'right' }}>
+                                    {product4?.product?.description?.[currentLocale as 'uk-UA']}
+                                </p>
+                            </div>
+                        }
                     </div>
                     <div className={styles.composition_product_column}>
                         <div
@@ -134,6 +145,7 @@ const Composition: FC<Props> = ({ products }) => {
                             <p className={styles.composition_product_text_descr}>
                                 {product3?.product?.description?.[currentLocale as 'uk-UA']}
                             </p>
+                            {product4 && <CardImage product={product4} />}
                         </div>
                     </div>
                 </React.Fragment>

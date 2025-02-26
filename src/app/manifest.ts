@@ -1,5 +1,6 @@
 'use server';
-import { defaultLocale } from '@/i18n.config';
+
+import { defaultLocale } from '@/i18n/routing';
 import { MetadataRoute } from 'next';
 import { getTranslations } from 'next-intl/server';
 

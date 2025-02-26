@@ -26,7 +26,7 @@ const CardImage: FC<Props> = ({ product }) => {
         <div
             onMouseEnter={toggleSizesShown}
             onMouseLeave={toggleSizesShown}
-            style={{ order: product.imageOrder }}
+            style={{ order: product?.imageOrder }}
             className={styles.composition_product_image}
         >
             <Image

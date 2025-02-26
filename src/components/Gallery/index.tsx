@@ -96,6 +96,20 @@ const Gallery: FC<Props> = ({ products }) => {
                             textOrder: -1,
                             imageOrder: 4,
                         },
+                        {
+                            product: products.find(
+                                (product) => product.id === 'Earth-Harmony'
+                            ) as Product,
+                            textOrder: 1,
+                            imageOrder: 0,
+                        },
+                        {
+                            product: products.find(
+                                (product) => product.id === 'Serenity-Stone'
+                            ) as Product,
+                            textOrder: -1,
+                            imageOrder: 4,
+                        },
                     ]}
                 />
             </motion.section>

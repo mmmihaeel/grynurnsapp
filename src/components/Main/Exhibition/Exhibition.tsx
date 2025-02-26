@@ -26,10 +26,13 @@ const ExhibitionSection: FC = () => {
             (product) => product.id === 'Embrace-of-Eternity-(Red)'
         ) as Product,
         useProductsContext().find(
+            (product) => product.id === 'Serenity-Stone'
+        ) as Product,
+        useProductsContext().find(
             (product) => product.id === 'Earth-Harmony'
         ) as Product,
         useProductsContext().find(
-            (product) => product.id === 'Serenity-Stone'
+            (product) => product.id === 'Earthstone-Memory'
         ) as Product,
     ];
 

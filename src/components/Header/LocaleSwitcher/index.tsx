@@ -3,10 +3,10 @@ import styles from './LocaleSwitcher.module.scss';
 import { useLocale } from 'next-intl';
 import { useParams } from 'next/navigation';
 import { useTransition } from 'react';
-import { useRouter, usePathname } from '@/navigation';
-import { locales } from '@/i18n.config';
+import { usePathname, useRouter } from '@/i18n/routing';
 import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
+import { locales } from '@/i18n/routing';
 
 const show = {
     opacity: 1,
