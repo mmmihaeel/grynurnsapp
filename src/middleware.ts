@@ -9,6 +9,7 @@ export default async function middleware(request: NextRequest) {
 		response.headers.set('x-custom-locale', defaultLocale);
 		return response;
 	}
+	console.log(routing);
 	const handleI18nRouting = createMiddleware(routing);
 	const response = handleI18nRouting(request);
 	response.headers.set('x-custom-locale', locale);
@@ -16,9 +17,5 @@ export default async function middleware(request: NextRequest) {
 }
 
 export const config = {
-	matcher: [
-		'/',
-		'/(en-GB|de-DE|fr-FR|pl-PL|uk-UA)/:path*',
-		'/((?!_next|_vercel|.*\\..*).*)',
-	],
+	matcher: ['/((?!api|_next|.*\\..*).*)'],
 };
