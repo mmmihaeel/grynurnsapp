@@ -56,8 +56,8 @@ export const routing = defineRouting({
 		},
 	],
 	alternateLinks: true,
-	localeDetection: false,
-	localeCookie: false,
+	localeDetection: true,
+	localeCookie: true,
 });
 
 export const { Link, getPathname, redirect, usePathname, useRouter } =
