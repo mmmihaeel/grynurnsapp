@@ -63,7 +63,7 @@ export const routing = defineRouting({
 	localePrefix: 'as-needed',
 	domains: domains,
 	alternateLinks: true,
-	localeDetection: true,
+	localeDetection: false,
 	localeCookie: true,
 });
 
