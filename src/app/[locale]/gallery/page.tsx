@@ -15,6 +15,7 @@ export async function generateMetadata({
         locale: params.locale,
         namespace: 'translations.Metadata',
     });
+
     return {
         title: t('gallery.title'),
         description: t('gallery.description'),
@@ -29,30 +30,30 @@ export async function generateMetadata({
         category: 'Memorial',
         openGraph: {
             type: 'website',
-            url: 'https://grynurns.com',
+            url: String(process.env.COM_DOMAIN),
             title: t('gallery.title'),
             description: t('gallery.description'),
             siteName: 'Grynurns App',
             images: [
                 {
-                    url: 'https://grynurns.com/previews/gallery-preview.jpg',
+                    url: `${String(process.env.COM_DOMAIN)}/previews/gallery-preview.jpg`,
                 },
             ],
         },
         appleWebApp: {
             capable: true,
             title: t('gallery.title'),
-            startupImage: 'https://grynurns.com/previews/gallery-preview.jpg',
+            startupImage: `${String(process.env.COM_DOMAIN)}/previews/gallery-preview.jpg`,
             statusBarStyle: 'black-translucent',
         },
         twitter: {
             card: 'summary_large_image',
             site: '@grynurnsapp',
             creator: '@grynurns@gmail.com',
-            images: 'https://grynurns.com/previews/gallery-preview.jpg',
+            images: `${String(process.env.COM_DOMAIN)}/previews/gallery-preview.jpg`,
         },
         alternates: {
-            canonical: 'https://grynurns.com/gallery',
+            canonical: `${String(process.env.COM_DOMAIN)}/gallery`,
         },
     };
 }

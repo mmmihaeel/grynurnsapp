@@ -2,7 +2,7 @@
 import getProducts from '@/actions/get-products';
 import Main from '@/components/Main';
 import { Metadata, Viewport } from 'next';
-import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 type MetadataProps = {
     params: { locale: string };
@@ -30,30 +30,30 @@ export async function generateMetadata({
         category: 'Memorial',
         openGraph: {
             type: 'website',
-            url: 'https://grynurns.com',
+            url: String(process.env.COM_DOMAIN),
             title: t('main.title'),
             description: t('main.description'),
             siteName: 'Grynurns App',
             images: [
                 {
-                    url: 'https://grynurns.com/previews/main-preview.jpg',
+                    url: `${String(process.env.COM_DOMAIN)}/previews/main-preview.jpg`,
                 },
             ],
         },
         appleWebApp: {
             capable: true,
             title: t('main.title'),
-            startupImage: 'https://grynurns.com/previews/main-preview.jpg',
+            startupImage: `${String(process.env.COM_DOMAIN)}/previews/main-preview.jpg`,
             statusBarStyle: 'black-translucent',
         },
         twitter: {
             card: 'summary_large_image',
             site: '@grynurnsapp',
             creator: '@grynurns@gmail.com',
-            images: 'https://grynurns.com/previews/main-preview.jpg',
+            images: `${String(process.env.COM_DOMAIN)}/previews/main-preview.jpg`,
         },
         alternates: {
-            canonical: 'https://grynurns.com',
+            canonical: `${String(process.env.COM_DOMAIN)}`,
         },
     };
 }
@@ -70,7 +70,7 @@ type PageProps = {
 };
 
 const MainPage = async ({ params: { locale } }: PageProps) => {
-    unstable_setRequestLocale(locale);
+    setRequestLocale(locale);
     const products = await getProducts();
     return <Main products={products} />;
 };
