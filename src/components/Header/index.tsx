@@ -80,7 +80,7 @@ const Header = () => {
                     </Link>
                     <NextLink
                         className={styles.header_nav_link}
-                        href={`${pathname}/#contacts`}
+                        href={`${pathname}/#${t('contacts')}`}
                         locale={currentLocale}
                     >
                         {t('contacts')}

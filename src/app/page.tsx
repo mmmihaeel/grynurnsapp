@@ -1,9 +1,8 @@
-"use server";
-
-import { redirect } from 'next/navigation';
+"use client";
 import { defaultLocale } from '@/i18n/routing';
+import { redirect, usePathname } from 'next/navigation';
 
-
-export default async function RootPage() {
-    redirect(`/${defaultLocale}`);
+export default function RootPage() {
+    const pathname = usePathname();
+    redirect(`/${defaultLocale}/${pathname}`);
 }

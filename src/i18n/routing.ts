@@ -18,43 +18,50 @@ export const pathnames = {
 export type Pathnames = keyof typeof routing.pathnames;
 export type Locale = (typeof routing.locales)[number];
 
+const domains = [
+	{
+		domain: String(process.env.VERCEL_URL),
+		defaultLocale: 'en-GB' as const,
+		locales: ['en-GB' as const],
+	},
+	{
+		domain: String(process.env.COM_DOMAIN),
+		defaultLocale: 'en-GB' as const,
+		locales: ['en-GB' as const],
+	},
+	{
+		domain: String(process.env.FR_DOMAIN),
+		defaultLocale: 'fr-FR' as const,
+		locales: ['fr-FR' as const],
+	},
+	{
+		domain: String(process.env.PL_DOMAIN),
+		defaultLocale: 'pl-PL' as const,
+		locales: ['pl-PL' as const],
+	},
+	{
+		domain: String(process.env.DE_DOMAIN),
+		defaultLocale: 'de-DE' as const,
+		locales: ['de-DE' as const],
+	},
+	{
+		domain: String(process.env.EN_DOMAIN),
+		defaultLocale: 'en-GB' as const,
+		locales: ['en-GB' as const],
+	},
+	{
+		domain: String(process.env.UK_DOMAIN),
+		defaultLocale: 'uk-UA' as const,
+		locales: ['uk-UA' as const],
+	},
+];
+
 export const routing = defineRouting({
 	locales,
 	defaultLocale,
 	pathnames,
 	localePrefix: 'as-needed',
-	domains: [
-		{
-			domain: String(process.env.VERCEL_URL),
-			defaultLocale: 'en-GB',
-			locales: ['en-GB'],
-		},
-		{
-			domain: String(process.env.COM_DOMAIN),
-			defaultLocale: 'en-GB',
-			locales: ['en-GB'],
-		},
-		{
-			domain: String(process.env.FR_DOMAIN),
-			defaultLocale: 'fr-FR',
-		},
-		{
-			domain: String(process.env.PL_DOMAIN),
-			defaultLocale: 'pl-PL',
-		},
-		{
-			domain: String(process.env.DE_DOMAIN),
-			defaultLocale: 'de-DE',
-		},
-		{
-			domain: String(process.env.EN_DOMAIN),
-			defaultLocale: 'en-GB',
-		},
-		{
-			domain: String(process.env.UK_DOMAIN),
-			defaultLocale: 'uk-UA',
-		},
-	],
+	domains: domains,
 	alternateLinks: true,
 	localeDetection: true,
 	localeCookie: true,

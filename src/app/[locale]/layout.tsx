@@ -2,7 +2,8 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { Mariupol } from '../fonts';
-import { defaultLocale, locales } from '@/i18n/routing';
+import { locales } from '@/i18n/routing';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 export async function generateStaticParams() {
@@ -18,8 +19,6 @@ const MainLayout = async ({
 }) => {
     const messages = await getMessages();
     setRequestLocale(locale);
-
-    console.log(locale, defaultLocale);
 
     return (
         <html lang={locale} className={Mariupol.className}>
@@ -118,6 +117,7 @@ const MainLayout = async ({
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>
+                <SpeedInsights />
             </body>
         </html>
     );

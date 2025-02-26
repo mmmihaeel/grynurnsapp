@@ -7,13 +7,14 @@ import Link from 'next/link';
 
 const Footer = () => {
     const t = useTranslations('translations.footer');
+    const headerT = useTranslations('translations.header');
 
     return (
         <motion.footer
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            id='contacts'
+            id={headerT('contacts')}
             transition={{ duration: 0.2 }}
             className={styles.footer}
         >
