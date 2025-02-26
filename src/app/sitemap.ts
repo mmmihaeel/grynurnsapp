@@ -1,5 +1,4 @@
-import { defaultLocale, locales, pathnames } from '@/i18n.config';
-import { getPathname } from '@/navigation';
+import { defaultLocale, getPathname, locales, pathnames } from '@/i18n/routing';
 import { MetadataRoute } from 'next';
 import { headers } from 'next/headers';
 
