@@ -17,5 +17,9 @@ export default async function middleware(request: NextRequest) {
 }
 
 export const config = {
-	matcher: ['/((?!api|_next|.*\\..*).*)'],
+	matcher: [
+		'/',
+		'/(en-GB|de-DE|fr-FR|pl-PL|uk-UA)/:path*',
+		'/((?!_next|_vercel|.*\\..*).*)',
+	],
 };

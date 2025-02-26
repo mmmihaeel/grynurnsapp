@@ -20,27 +20,37 @@ export type Locale = (typeof routing.locales)[number];
 
 const domains = [
 	{
-		domain: 'grynurns.fr',
-		defaultLocale: 'fr-FR' as const,
-		locales: ['fr-FR' as const],
-	},
-	{
-		domain: 'grynurns.pl',
-		defaultLocale: 'pl-PL' as const,
-		locales: ['pl-PL' as const],
-	},
-	{
-		domain: 'grynurns.de',
-		defaultLocale: 'de-DE' as const,
-		locales: ['de-DE' as const],
-	},
-	{
-		domain: 'grynurns.uk',
+		domain: String(process.env.VERCEL_URL || 'gb.localhost:3000'),
 		defaultLocale: 'en-GB' as const,
 		locales: ['en-GB' as const],
 	},
 	{
-		domain: 'grynurns.com.ua',
+		domain: String(process.env.COM_DOMAIN || 'gb.localhost:3000'),
+		defaultLocale: 'en-GB' as const,
+		locales: ['en-GB' as const],
+	},
+	{
+		domain: String(process.env.FR_DOMAIN || 'gb.localhost:3000'),
+		defaultLocale: 'fr-FR' as const,
+		locales: ['fr-FR' as const],
+	},
+	{
+		domain: String(process.env.PL_DOMAIN || 'pl.localhost:3000'),
+		defaultLocale: 'pl-PL' as const,
+		locales: ['pl-PL' as const],
+	},
+	{
+		domain: String(process.env.DE_DOMAIN || 'de.localhost:3000'),
+		defaultLocale: 'de-DE' as const,
+		locales: ['de-DE' as const],
+	},
+	{
+		domain: String(process.env.EN_DOMAIN || 'gb.localhost:3000'),
+		defaultLocale: 'en-GB' as const,
+		locales: ['en-GB' as const],
+	},
+	{
+		domain: String(process.env.UK_DOMAIN || 'uk.localhost:3000'),
 		defaultLocale: 'uk-UA' as const,
 		locales: ['uk-UA' as const],
 	},
@@ -50,11 +60,11 @@ export const routing = defineRouting({
 	locales,
 	defaultLocale,
 	pathnames,
-	localePrefix: 'never',
+	localePrefix: 'as-needed',
 	domains: domains,
 	alternateLinks: true,
 	localeDetection: false,
-	localeCookie: true,
+	localeCookie: false,
 });
 
 export const { Link, getPathname, redirect, usePathname, useRouter } =
